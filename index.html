@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/prototypelab/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="prototypelab">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>prototypelab</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    #app-wrapper {
+      border-radius: 20px;
+      box-shadow: 0 0 50px rgba(0,0,0,0.9);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    #app {
+      width: 393px;
+      height: 852px;
+      transform-origin: top left;
+    }
+  </style>
+</head>
+<body>
+  <div id="app-wrapper"><div id="app"></div></div>
+  <script>
+    (function() {
+      var wrapper = document.getElementById('app-wrapper');
+      var app     = document.getElementById('app');
+      var MIN = 150, DEFAULT = 600;
+      var h = DEFAULT;
+
+      function applySize() {
+        var scale = h / 852;
+        wrapper.style.width  = Math.round(393 * scale) + 'px';
+        wrapper.style.height = h + 'px';
+        app.style.transform  = 'scale(' + scale + ')';
+      }
+
+      // Pinch-to-zoom inside the game window
+      var pinchDist0 = 0, pinchH0 = 0;
+
+      function touchDist(touches) {
+        var dx = touches[0].clientX - touches[1].clientX;
+        var dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+      }
+      function midInWrapper(touches) {
+        var mx = (touches[0].clientX + touches[1].clientX) / 2;
+        var my = (touches[0].clientY + touches[1].clientY) / 2;
+        var r  = wrapper.getBoundingClientRect();
+        return mx >= r.left && mx <= r.right && my >= r.top && my <= r.bottom;
+      }
+
+      window.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 2 && midInWrapper(e.touches)) {
+          pinchDist0 = touchDist(e.touches);
+          pinchH0    = h;
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, { capture: true, passive: false });
+
+      window.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 2 && pinchDist0 > 0) {
+          var newH = Math.max(MIN, Math.round(pinchH0 * touchDist(e.touches) / pinchDist0));
+          if (newH !== h) { h = newH; applySize(); }
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, { capture: true, passive: false });
+
+      window.addEventListener('touchend', function(e) {
+        if (e.touches.length < 2) pinchDist0 = 0;
+      });
+
+      applySize();
+    })();
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
