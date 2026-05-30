@@ -97295,7 +97295,7 @@ m.push(A.aEE(new A.aXk(l),h,t.Xo))}else B.c.K(m,h.dO(i,new A.aXl(l),t.l7))
 h=A.kQ(!1,A.b4(A.e([new A.oK(r,q,p,o,k),A.b0(A.aHH(m,new A.a6(16,12,16,j+76)),1)],n),B.v,B.u,B.x,B.J),!0)
 r=g?k:new A.aXm(l,a)
 q=A.f6(k,k,B.q,B.aE,B.Z,k,k,k,k,B.a_,k,k,B.cK,k,new A.bT(A.ab(8),B.M),B.dx,k,k,k,k)
-return A.kS(B.a_,A.dy(B.b4,A.e([h,A.dD(j+16,A.fZ(A.bg6(A.f5(g?B.a3H:A.ar(A.e([B.MN,B.aC,B.a42,B.a0,B.rn,B.c_,A.W("100",k,k,k,B.Dy,k,k)],n),B.v,B.u,B.a7),r,q),0.5),k,k),k,k,0,0,k,k),A.dD(0,new A.lp(3,new A.aXn(l,a),k),k,k,0,0,k,k)],n),B.a6,B.au))}}
+return A.kS(B.a_,A.dy(B.b4,A.e([h,A.dD(j+16,A.fZ(A.bg6(A.f5(g?B.a3I:A.ar(A.e([B.MN,B.aC,B.a42,B.a0,B.rn,B.c_,A.W("100",k,k,k,B.Dy,k,k)],n),B.v,B.u,B.a7),r,q),0.5),k,k),k,k,0,0,k,k),A.dD(0,new A.lp(3,new A.aXn(l,a),k),k,k,0,0,k,k)],n),B.a6,B.au))}}
 A.aX6.prototype={
 $1(a){var s=this.a
 return new A.uI(s.a.iX(),s.a.x,null)},
@@ -97477,7 +97477,7 @@ o.push(A.ar(s,B.v,B.u,B.x))
 o.push(B.aJ)
 g=l?new A.aXX(r,a,k,j,i):q
 s=A.f6(q,q,B.q,B.aE,B.Z,q,q,q,q,B.a_,q,q,B.K4,q,new A.bT(A.ab(8),B.M),B.dx,q,q,B.hP,q)
-o.push(A.bX(A.f5(r.w?B.Yx:B.a3F,g,s),q,1/0))
+o.push(A.bX(A.f5(r.w?B.Yx:B.a3G,g,s),q,1/0))
 return A.eC(q,B.a_,A.Zh(A.b4(o,B.af,B.u,B.a7,B.J),B.lD,B.aW),q,q,q,q,B.aU,q,new A.bT(h,B.bL),q)}}
 A.aXM.prototype={
 $0(){var s=this.a
@@ -97650,7 +97650,7 @@ s=A.ar(A.e([B.mp,B.cb,A.W("Reset in: "+A.bpr(A.bps().cO(new A.bm(Date.now(),0,!1
 r=o.a.c
 r=A.ar(A.e([A.cG(r.d,r.c,n,20),B.a0,A.W(A.r(l)+" "+r.e,n,n,n,B.hT,n,n)],h),B.v,B.u,B.x)
 q=o.gow()>0?o.gahe():n
-q=A.b0(A.f5(B.a3N,q,A.f6(n,n,A.a1(40,B.q.n()>>>16&255,B.q.n()>>>8&255,B.q.n()&255),B.aE,B.Z,n,n,n,n,B.q,n,n,B.cK,n,new A.bT(A.ab(8),B.M),new A.aY(A.a1(120,B.q.n()>>>16&255,B.q.n()>>>8&255,B.q.n()&255),1,B.T,-1),n,n,n,n)),1)
+q=A.b0(A.f5(B.a3O,q,A.f6(n,n,A.a1(40,B.q.n()>>>16&255,B.q.n()>>>8&255,B.q.n()&255),B.aE,B.Z,n,n,n,n,B.q,n,n,B.cK,n,new A.bT(A.ab(8),B.M),new A.aY(A.a1(120,B.q.n()>>>16&255,B.q.n()>>>8&255,B.q.n()&255),1,B.T,-1),n,n,n,n)),1)
 p=o.gow()>0&&!(m>=300)?o.gafb():n
 return A.eC(n,B.a_,new A.aO(B.cl,A.b4(A.e([i,B.aJ,j,B.aK,s,B.aN,B.Jr,B.aN,B.a4u,B.aN,r,B.cq,A.ar(A.e([q,B.aB,A.b0(A.f5(B.a4H,p,A.f6(n,n,B.q,B.aE,B.Z,n,n,n,n,B.a_,n,n,B.cK,n,new A.bT(A.ab(8),B.M),B.dx,n,n,B.dm,n)),1)],h),B.v,B.u,B.x)],h),B.af,B.u,B.a7,B.J),n),n,n,n,n,B.aU,n,new A.bT(k,B.bL),n)}}
 A.aZ5.prototype={
@@ -101294,7 +101294,7 @@ A.aYS.prototype={
 $1(a){return this.a.QS()},
 $S:30}
 A.afD.prototype={
-H(a){var s=null,r=A.ab(12),q=A.b3(B.S,1),p=A.e([B.We,B.b9,B.a3L,B.b0],t.p)
+H(a){var s=null,r=A.ab(12),q=A.b3(B.S,1),p=A.e([B.We,B.b9,B.a3M,B.b0],t.p)
 B.c.K(p,new A.Z(B.P9,new A.aCw(this),t.kv))
 return A.an(s,A.b4(p,B.af,B.u,B.x,B.J),B.w,s,new A.at(B.ad,s,q,r,s,s,B.G),s,s,B.Kn,s)}}
 A.aCw.prototype={
@@ -101831,7 +101831,7 @@ b=A.ab(4)
 s=i?B.kV:B.q
 s=A.oF(b,A.t8(B.ad,q,8,j,new A.ll(s,t.ZU)))
 b=A.f6(q,q,B.q,B.aE,B.Z,q,q,q,q,B.bx,q,q,B.cK,q,new A.bT(A.ab(8),B.M),B.dx,q,q,q,q)
-return A.eC(q,B.a_,new A.aO(B.KC,A.b4(A.e([B.Mn,B.aN,B.a3M,B.cq,new A.a8t(B.eT,B.dA,"Artifacts",f,e,q),B.b0,new A.a8t(B.cR,B.aY,"Gold",d,c,q),B.cq,a,B.aK,s,B.cq,A.bX(A.f5(B.a46,h?new A.b5G(r,a1):q,b),q,1/0)],a0),B.v,B.u,B.a7,B.J),q),q,q,q,q,B.aU,q,new A.bT(g,B.F4),q)}}
+return A.eC(q,B.a_,new A.aO(B.KC,A.b4(A.e([B.Mn,B.aN,B.a3N,B.cq,new A.a8t(B.eT,B.dA,"Artifacts",f,e,q),B.b0,new A.a8t(B.cR,B.aY,"Gold",d,c,q),B.cq,a,B.aK,s,B.cq,A.bX(A.f5(B.a46,h?new A.b5G(r,a1):q,b),q,1/0)],a0),B.v,B.u,B.a7,B.J),q),q,q,q,q,B.aU,q,new A.bT(g,B.F4),q)}}
 A.b5I.prototype={
 $1(a){var s=this.a
 if(s.c!=null)s.D(new A.b5H())},
@@ -102114,7 +102114,7 @@ A.d9(!0,new A.b90(s),s,t.y).b7(new A.b91(this.a,r),t.P)},
 $S:1}
 A.b90.prototype={
 $1(a){var s=A.ab(14),r=this.a
-return A.ax8(A.e([A.m8(B.hU,new A.b8T(r),null),A.m8(B.a3J,new A.b8U(r),null)],t.p),B.a_,B.a4k,new A.bT(s,B.oG),B.a4v)},
+return A.ax8(A.e([A.m8(B.hU,new A.b8T(r),null),A.m8(B.a3K,new A.b8U(r),null)],t.p),B.a_,B.a4k,new A.bT(s,B.oG),B.a4v)},
 $S:85}
 A.b8T.prototype={
 $0(){A.bG(this.a,!1).cp(!1)
@@ -103283,7 +103283,7 @@ $0(){return this.a.oP(this.b)},
 $S:1}
 A.a_W.prototype={
 H(a){var s=null,r=A.ab(14),q=A.b3(B.b6,1),p=A.e([new A.cd(2,B.ar,B.aQ,B.y,20)],t.V),o=A.an(s,s,B.w,s,B.d4,1,s,s,s),n=A.ab(8)
-return A.eC(s,B.O,A.an(s,A.b4(A.e([B.Wh,B.b0,o,B.cq,B.a4K,B.cq,A.bs(s,A.an(s,B.a3O,B.w,s,new A.at(B.ad,s,A.b3(B.S,1),n,s,s,B.G),s,s,B.KB,s),B.Q,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.b6_(a),s,s,s,s,s,s)],t.p),B.v,B.u,B.a7,B.J),B.w,s,new A.at(B.a_,s,q,r,p,s,B.G),s,s,B.cl,s),s,s,s,s,B.aU,s,s,s)}}
+return A.eC(s,B.O,A.an(s,A.b4(A.e([B.Wh,B.b0,o,B.cq,B.a4K,B.cq,A.bs(s,A.an(s,B.a3P,B.w,s,new A.at(B.ad,s,A.b3(B.S,1),n,s,s,B.G),s,s,B.KB,s),B.Q,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.b6_(a),s,s,s,s,s,s)],t.p),B.v,B.u,B.a7,B.J),B.w,s,new A.at(B.a_,s,q,r,p,s,B.G),s,s,B.cl,s),s,s,s,s,B.aU,s,s,s)}}
 A.b6_.prototype={
 $0(){A.bG(this.a,!1).cp(null)
 return null},
@@ -118648,8 +118648,8 @@ B.w=new A.vU(0,"none")
 B.LD=new A.aL(57685,"MaterialIcons",!1)
 B.MV=new A.b1(B.LD,14,B.Z,null,null,null)
 B.aC=new A.cr(6,null,null,null)
-B.a3I=new A.az("Chat",null,B.hQ,null,null,null,null,null,null)
-B.P0=s([B.MV,B.aC,B.a3I],t.p)
+B.a3J=new A.az("Chat",null,B.hQ,null,null,null,null,null,null)
+B.P0=s([B.MV,B.aC,B.a3J],t.p)
 B.Wo=new A.ev(B.ak,B.u,B.a7,B.v,null,B.J,null,B.w,0,B.P0,null)
 B.GK=new A.hB(B.a2,null,null,B.Wo,null)
 B.a9i=new A.aUP(0,"material")
@@ -118674,8 +118674,8 @@ B.mS=new A.xd(B.Sf,1,1,0.3215686274509804,0.3215686274509804,B.r)
 B.a1s=new A.p(!0,B.mS,null,null,null,null,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a43=new A.az("Permission error \u2014 check Firestore rules",null,B.a1s,null,null,null,null,null,null)
 B.GN=new A.hB(B.a2,null,null,B.a43,null)
-B.a3E=new A.az("No participants yet",null,B.hQ,null,null,null,null,null,null)
-B.GO=new A.hB(B.a2,null,null,B.a3E,null)
+B.a3F=new A.az("No participants yet",null,B.hQ,null,null,null,null,null,null)
+B.GO=new A.hB(B.a2,null,null,B.a3F,null)
 B.pg=new A.lw(2,null,null,B.q,null,null,null,null)
 B.pd=new A.hB(B.a2,null,null,B.pg,null)
 B.GP=new A.vO(null,null,null,null,null,null,null,null,null)
@@ -120834,8 +120834,8 @@ B.ME=new A.b1(B.LX,18,B.aZ,null,null,null)
 B.TT=new A.aO(B.iC,B.ME,null)
 B.Kd=new A.a6(10,2,10,4)
 B.d_=new A.p(!0,B.Z,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a3K=new A.az("Unlock upgrades to strengthen your adventure",null,B.d_,null,null,null,null,null,null)
-B.TU=new A.aO(B.Kd,B.a3K,null)
+B.a3L=new A.az("Unlock upgrades to strengthen your adventure",null,B.d_,null,null,null,null,null,null)
+B.TU=new A.aO(B.Kd,B.a3L,null)
 B.ye=new A.aO(B.qm,B.fH,null)
 B.qo=new A.a6(10,0,10,4)
 B.MS=new A.b1(B.cn,22,B.bT,null,null,null)
@@ -120907,8 +120907,8 @@ B.UT=new A.a4Y(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Xp=new A.eZ(B.L,B.y,6)
 B.rF=s([B.Xp],t.kO)
 B.a1F=new A.p(!0,B.D,null,null,null,null,13,B.E,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.rF,null,null,null)
-B.a3Q=new A.az("v0.1.48",null,B.a1F,null,null,null,null,null,null)
-B.UU=new A.pC(null,16,16,null,null,null,B.a3Q,null)
+B.a3E=new A.az("v0.1.49",null,B.a1F,null,null,null,null,null,null)
+B.UU=new A.pC(null,16,16,null,null,null,B.a3E,null)
 B.UV=new A.YP(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.UW=new A.a53(null,null,null,null,null,null,null)
 B.BR=new A.aZ(1,1)
@@ -120994,16 +120994,16 @@ B.a41=new A.az("War Day Preparation",null,B.k6,null,null,null,null,null,null)
 B.O9=s([B.N5,B.a0,B.a41],t.p)
 B.Wh=new A.ev(B.ak,B.aG,B.x,B.v,null,B.J,null,B.w,0,B.O9,null)
 B.MY=new A.b1(B.rb,14,B.q,null,null,null)
-B.a3P=new A.az("History",null,B.cE,null,null,null,null,null,null)
-B.PM=s([B.MY,B.aC,B.a3P],t.p)
+B.a3Q=new A.az("History",null,B.cE,null,null,null,null,null,null)
+B.PM=s([B.MY,B.aC,B.a3Q],t.p)
 B.Wi=new A.ev(B.ak,B.aG,B.x,B.v,null,B.J,null,B.w,0,B.PM,null)
 B.Mi=new A.b1(B.re,16,B.q,null,null,null)
 B.a4G=new A.az("Auto Mode",null,B.k6,null,null,null,null,null,null)
 B.PQ=s([B.Mi,B.a0,B.a4G],t.p)
 B.Wj=new A.ev(B.ak,B.aG,B.x,B.v,null,B.J,null,B.w,0,B.PQ,null)
 B.Mz=new A.b1(B.rh,22,B.q,null,null,null)
-B.a3G=new A.az("Dungeons",null,B.fk,null,null,null,null,null,null)
-B.Pd=s([B.Mz,B.a0,B.a3G],t.p)
+B.a3H=new A.az("Dungeons",null,B.fk,null,null,null,null,null,null)
+B.Pd=s([B.Mz,B.a0,B.a3H],t.p)
 B.Wk=new A.ev(B.ak,B.u,B.x,B.v,null,B.J,null,B.w,0,B.Pd,null)
 B.rf=new A.aL(61466,"MaterialIcons",!1)
 B.Mp=new A.b1(B.rf,16,B.q,null,null,null)
@@ -121730,15 +121730,15 @@ B.a2a=new A.p(!0,B.an,null,".AppleSystemUIFont",null,null,null,null,null,null,nu
 B.a2x=new A.p(!0,B.L,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.C,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.a_4=new A.p(!0,B.L,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.C,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.a3D=new A.ff(B.a13,B.a_T,B.a14,B.a1J,B.a_w,B.a_D,B.a0f,B.a1x,B.a0w,B.a2h,B.ZW,B.a_d,B.a2a,B.a2x,B.a_4)
-B.a3F=new A.az("Confirm",null,null,null,null,null,null,null,null)
-B.a3H=new A.az("Already in a clan",null,B.nU,null,null,null,null,null,null)
+B.a3G=new A.az("Confirm",null,null,null,null,null,null,null,null)
+B.a3I=new A.az("Already in a clan",null,B.nU,null,null,null,null,null,null)
 B.a_b=new A.p(!0,B.bt,null,null,null,null,14,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.ke=new A.az("Empty",null,B.a_b,null,null,null,null,null,null)
-B.a3J=new A.az("Delete",null,B.DD,null,null,null,null,null,null)
-B.a3L=new A.az("Spend gems to get other currencies",null,B.d_,null,null,null,null,null,null)
-B.a3M=new A.az("Idle Rewards",null,B.fk,null,null,null,null,null,null)
-B.a3N=new A.az("Sweep Last",null,null,null,null,null,null,null,null)
-B.a3O=new A.az("Close",null,B.hO,null,null,null,null,null,null)
+B.a3K=new A.az("Delete",null,B.DD,null,null,null,null,null,null)
+B.a3M=new A.az("Spend gems to get other currencies",null,B.d_,null,null,null,null,null,null)
+B.a3N=new A.az("Idle Rewards",null,B.fk,null,null,null,null,null,null)
+B.a3O=new A.az("Sweep Last",null,null,null,null,null,null,null,null)
+B.a3P=new A.az("Close",null,B.hO,null,null,null,null,null,null)
 B.a3R=new A.az("Select the substats to keep automatically",null,B.d_,null,null,null,null,null,null)
 B.a3S=new A.az("Watch",null,B.hN,null,null,null,null,null,null)
 B.a02=new A.p(!0,B.Z,null,null,null,null,9,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
