@@ -52337,7 +52337,7 @@
     },
     _SettingsDialogState: function _SettingsDialogState() {
       var _ = this;
-      _.___SettingsDialogState__confirmItemReplace_A = _.___SettingsDialogState__sfx_A = _.___SettingsDialogState__music_A = _.___SettingsDialogState__vibrations_A = _.___SettingsDialogState__gems_A = _.___SettingsDialogState__playerName_A = $;
+      _.___SettingsDialogState__confirmItemReplace_A = _.___SettingsDialogState__sfx_A = _.___SettingsDialogState__music_A = _.___SettingsDialogState__vibrations_A = _.___SettingsDialogState__hasRenamedOnce_A = _.___SettingsDialogState__gems_A = _.___SettingsDialogState__playerName_A = $;
       _._isLinkingGoogle = false;
       _._framework$_element = _._widget = null;
     },
@@ -197909,6 +197909,7 @@
       t1 = _this._widget;
       _this.___SettingsDialogState__playerName_A = t1.playerName;
       _this.___SettingsDialogState__gems_A = t1.gems;
+      _this.___SettingsDialogState__hasRenamedOnce_A = t1.hasRenamedOnce;
       _this.___SettingsDialogState__vibrations_A = t1.vibrationsEnabled;
       _this.___SettingsDialogState__music_A = t1.musicEnabled;
       _this.___SettingsDialogState__sfx_A = t1.sfxEnabled;
@@ -197929,7 +197930,9 @@
       t5 === $ && A.throwUnnamedLateFieldNI();
       t6 = type$.JSArray_Widget;
       t5 = A._setArrayType([A.Text$(t5, _null, _null, _null, B.TextStyle_8mM, _null, _null), B.SizedBox_6_null_null_null, B.Icon_VqU, B.SizedBox_6_null_null_null], t6);
-      if (!_this._widget.hasRenamedOnce)
+      t7 = _this.___SettingsDialogState__hasRenamedOnce_A;
+      t7 === $ && A.throwUnnamedLateFieldNI();
+      if (!t7)
         t5.push(B.Text_zsR);
       else
         B.JSArray_methods.addAll$1(t5, A._setArrayType([B.Icon_WeJ, B.SizedBox_3_null_null_null, A.Text$("100", _null, _null, _null, B.TextStyle_NDt, _null, _null)], t6));
@@ -197957,7 +197960,9 @@
       t2 === $ && A.throwUnnamedLateFieldNI();
       t3 = t1.___SettingsDialogState__gems_A;
       t3 === $ && A.throwUnnamedLateFieldNI();
-      return new A._RenameDialog(t2, t3, t1._widget.hasRenamedOnce, null);
+      t1 = t1.___SettingsDialogState__hasRenamedOnce_A;
+      t1 === $ && A.throwUnnamedLateFieldNI();
+      return new A._RenameDialog(t2, t3, t1, null);
     },
     $signature: 711
   };
@@ -197977,11 +197982,14 @@
       var t2,
         t1 = this.$this;
       t1.___SettingsDialogState__playerName_A = this.name;
-      if (t1._widget.hasRenamedOnce) {
+      t2 = t1.___SettingsDialogState__hasRenamedOnce_A;
+      t2 === $ && A.throwUnnamedLateFieldNI();
+      if (t2) {
         t2 = t1.___SettingsDialogState__gems_A;
         t2 === $ && A.throwUnnamedLateFieldNI();
         t1.___SettingsDialogState__gems_A = t2 - 100;
       }
+      t1.___SettingsDialogState__hasRenamedOnce_A = true;
     },
     $signature: 1
   };
