@@ -47418,7 +47418,7 @@
       _.icon = t3;
     },
     substatChance(altarLevel) {
-      var ratio = (altarLevel - 1) / 19;
+      var ratio = (altarLevel - 1) / 39;
       return ratio * ratio * 25;
     },
     rollSubstats(rng, altarLevel, forceMax, perfect) {
@@ -189454,7 +189454,7 @@
       return B.JSNumber_methods.floor$0(B.JSNumber_methods.floor$0(this._pendingSeconds) * this.get$_effectiveArtifactsPerSecond());
     },
     get$_altarUpgradeCost() {
-      var base = B.JSNumber_methods.round$0(Math.pow(1.5, this._altarLevel - 1) * 500);
+      var base = B.JSNumber_methods.round$0(Math.pow(1.2, this._altarLevel - 1) * 500);
       return B.JSInt_methods.clamp$2(B.JSNumber_methods.round$0(base * (1 - this._rFactor$1(8) / 100)), 0, base);
     },
     get$_effectiveAltarCooldownTotal() {
@@ -189936,7 +189936,7 @@
     },
     _upgradeAltar$0() {
       var t1, goldCost, _this = this;
-      if (_this._altarLevel >= 20)
+      if (_this._altarLevel >= 40)
         return;
       t1 = _this._altarCooldownEnd;
       if (t1 != null && t1.isAfter$1(new A.DateTime(Date.now(), 0, false)))
@@ -190097,7 +190097,7 @@
               }
               $async$self.setState$1(new A._GameScreenState__handleSummon_closure($async$self));
               $async$self._awardWarPoint$0();
-              t2 = new A._GameScreenState__handleSummon_b(Math.pow(1.7, $async$self._altarLevel - 1));
+              t2 = new A._GameScreenState__handleSummon_b(Math.pow(1.4, $async$self._altarLevel - 1));
               t1.targetSlots = t1.newItem = t1.slot = null;
               if (type === "Equipment") {
                 slot = t1.slot = B.C__JSRandom.nextInt$1(6);
@@ -190273,7 +190273,7 @@
                 break;
               }
               $async$self.setState$1(new A._GameScreenState__autoModeTick_closure0($async$self));
-              t2 = new A._GameScreenState__autoModeTick_b(Math.pow(1.7, $async$self._altarLevel - 1));
+              t2 = new A._GameScreenState__autoModeTick_b(Math.pow(1.4, $async$self._altarLevel - 1));
               t1.targetSlots = t1.newItem = t1.slot = null;
               type = $async$self._autoModeType;
               if (type === "Equipment") {
@@ -190758,7 +190758,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_pS6], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_MXZ], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._artifacts;
       t4 = _this._altarCooldownTotal;
@@ -190901,7 +190901,7 @@
           totalMs = A._asIntQ(t3.$index(t2, "altarCooldownTotalMs"));
           t1._altarCooldownTotal = totalMs != null ? A.Duration$(0, totalMs, 0) : t1.get$_effectiveAltarCooldownTotal();
         } else {
-          t1._altarLevel = Math.min(t1._altarLevel + 1, 20);
+          t1._altarLevel = Math.min(t1._altarLevel + 1, 40);
           t1._altarCooldownTotal = t1._altarCooldownEnd = null;
         }
       }
@@ -192358,7 +192358,7 @@
   A._GameScreenState__devSetAltarLevel_closure.prototype = {
     call$0() {
       var t1 = this.$this;
-      t1._altarLevel = B.JSInt_methods.clamp$2(this.level, 1, 20);
+      t1._altarLevel = B.JSInt_methods.clamp$2(this.level, 1, 40);
       t1._altarCooldownTotal = t1._altarCooldownEnd = null;
     },
     $signature: 1
@@ -195367,7 +195367,7 @@
         remaining = hasCooldown ? cooldownEnd.difference$1(now) : B.Duration_0,
         speedUpCost = hasCooldown ? Math.max(1, B.JSNumber_methods.ceil$0(B.JSInt_methods._tdivFast$1(remaining._duration, 1000000) / 86400 * 1000)) : 0,
         level = _this._widget.getLevel$0(),
-        isMax = level >= 20,
+        isMax = level >= 40,
         cost = _this._widget.getUpgradeCost$0(),
         gold = _this._widget.getGold$0(),
         gems = _this._widget.getGems$0(),
@@ -195498,7 +195498,7 @@
         t3 = A.Border_Border$all(B.Color_NsB, 1),
         t4 = A._setArrayType([new A.BoxShadow(2, B.BlurStyle_0, B.Color_GoI, B.Offset_0_0, 20)], type$.JSArray_BoxShadow),
         t5 = type$.JSArray_Widget;
-      return A.Dialog$(_null, B.Color_Edl, new A.ConstrainedBox(new A.BoxConstraints(0, 1 / 0, 0, t1.size._dy * 0.75), A.Container$(_null, A.Column$(A._setArrayType([A.Row$(A._setArrayType([A.GestureDetector$(_null, B.Padding_v6i, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._AltarInfoSheet_build_closure(context), _null, _null, _null, _null, _null, _null), B.Icon_ZZv, B.SizedBox_8_null_null_null, B.Text_mhy], t5), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_6_null_null, A.Container$(_null, _null, B.Clip_0, _null, B.BoxDecoration_osj, 1, _null, _null, _null), B.SizedBox_null_10_null_null, A.Row$(B.List_lsj, B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_6_null_null, A.Expanded$(A.ListView$builder(_null, new A._AltarInfoSheet_build_closure0(), 20, _null, false), 1)], t5), B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), B.Clip_0, _null, new A.BoxDecoration(B.Color_oqD, _null, t3, t2, t4, _null, B.BoxShape_0), _null, _null, B.EdgeInsets_20_16_20_20, _null), _null), _null, _null, _null, _null, B.SemanticsRole_4, _null, _null, _null);
+      return A.Dialog$(_null, B.Color_Edl, new A.ConstrainedBox(new A.BoxConstraints(0, 1 / 0, 0, t1.size._dy * 0.75), A.Container$(_null, A.Column$(A._setArrayType([A.Row$(A._setArrayType([A.GestureDetector$(_null, B.Padding_v6i, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._AltarInfoSheet_build_closure(context), _null, _null, _null, _null, _null, _null), B.Icon_ZZv, B.SizedBox_8_null_null_null, B.Text_mhy], t5), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_6_null_null, A.Container$(_null, _null, B.Clip_0, _null, B.BoxDecoration_osj, 1, _null, _null, _null), B.SizedBox_null_10_null_null, A.Row$(B.List_lsj, B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_6_null_null, A.Expanded$(A.ListView$builder(_null, new A._AltarInfoSheet_build_closure0(), 40, _null, false), 1)], t5), B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), B.Clip_0, _null, new A.BoxDecoration(B.Color_oqD, _null, t3, t2, t4, _null, B.BoxShape_0), _null, _null, B.EdgeInsets_20_16_20_20, _null), _null), _null, _null, _null, _null, B.SemanticsRole_4, _null, _null, _null);
     }
   };
   A._AltarInfoSheet_build_closure.prototype = {
@@ -196359,7 +196359,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A._setArrayType([A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_wVK, B.SizedBox_8_null_null_null, B.Text_w4Y, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_10_null_null, B.Divider_rgr, B.SizedBox_null_10_null_null], t4);
+      t5 = A._setArrayType([A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_wVK, B.SizedBox_8_null_null_null, B.Text_nAE, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_10_null_null, B.Divider_rgr, B.SizedBox_null_10_null_null], t4);
       B.JSArray_methods.addAll$1(t5, new A.MappedListIterable(B.List_9Lh, new A._DevConsoleState_build_closure0(), type$.MappedListIterable__Cmd_Widget));
       t5.push(B.SizedBox_null_8_null_null);
       t5.push(B.Divider_rgr);
@@ -241875,8 +241875,8 @@
     B.Shadow_dln = new A.Shadow(B.Color_vnR, B.Offset_0_0, 6);
     B.List_Ats = makeConstList([B.Shadow_dln], type$.JSArray_Shadow);
     B.TextStyle_bM0 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Ats, null, null, null);
-    B.Text_nEo = new A.Text("v0.1.60", null, B.TextStyle_bM0, null, null, null, null, null, null);
-    B.Positioned_pS6 = new A.Positioned(null, 16, 16, null, null, null, B.Text_nEo, null);
+    B.Text_i1M = new A.Text("v0.1.61", null, B.TextStyle_bM0, null, null, null, null, null, null);
+    B.Positioned_MXZ = new A.Positioned(null, 16, 16, null, null, null, B.Text_i1M, null);
     B.ProgressIndicatorThemeData_o79 = new A.ProgressIndicatorThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.RadioThemeData_6fK = new A.RadioThemeData(null, null, null, null, null, null, null);
     B.Radius_1_1 = new A.Radius(1, 1);
@@ -242750,13 +242750,13 @@
     B.Text_mhy = new A.Text("Altar Substat Chances", null, B.TextStyle_vPK, null, null, null, null, null, null);
     B.Text_mie = new A.Text("Upgrade to Level ", null, B.TextStyle_SXL, null, null, null, null, null, null);
     B.Text_mlr = new A.Text("Replace", null, B.TextStyle_TJs, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_nAE = new A.Text("v0.1.61", null, B.TextStyle_lmI, null, null, null, null, null, null);
     B.Text_qRK = new A.Text("Leave Clan", null, B.TextStyle_NzT, null, null, null, null, null, null);
     B.Text_rpe = new A.Text("Open", null, B.TextStyle_TJs, null, null, null, null, null, null);
     B.TextStyle_RUn = new A.TextStyle(true, B.Color_UdU, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_tSF = new A.Text("Cancel", null, B.TextStyle_RUn, null, null, null, null, null, null);
     B.Text_tth = new A.Text("PvP Arena", null, B.TextStyle_DNn, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_w4Y = new A.Text("v0.1.60", null, B.TextStyle_lmI, null, null, null, null, null, null);
     B.TextStyle_x00 = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 14, B.FontWeight_6_700, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_wVK = new A.Text("Console", null, B.TextStyle_x00, null, null, null, null, null, null);
     B.Text_xKq = new A.Text("Cost: ", null, B.TextStyle_uNC, null, null, null, null, null, null);
