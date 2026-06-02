@@ -198206,14 +198206,6 @@
               t1 = $async$self.___RenameDialogState__controller_F;
               t1 === $ && A.throwUnnamedLateFieldNI();
               $name = B.JSString_methods.trim$0(t1._change_notifier$_value.text);
-              if ($name === $async$self._widget.currentName) {
-                t1 = $async$self._framework$_element;
-                t1.toString;
-                A.Navigator_of(t1, false).pop$1($name);
-                // goto return
-                $async$goto = 1;
-                break;
-              }
               t1 = $async$self._framework$_element;
               t1.toString;
               $async$goto = 3;
@@ -198275,7 +198267,7 @@
         if (t1 >= 3)
           if (t1 <= 13) {
             t1 = $.$get$_RenameDialogState__validChars();
-            t1 = t1._nativeRegExp.test(t);
+            t1 = t1._nativeRegExp.test(t) && t !== _this._widget.currentName;
           } else
             t1 = t2;
         else
