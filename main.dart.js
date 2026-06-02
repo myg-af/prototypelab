@@ -190758,7 +190758,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_XWg], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_pS6], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._artifacts;
       t4 = _this._altarCooldownTotal;
@@ -196359,7 +196359,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A._setArrayType([A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_wVK, B.SizedBox_8_null_null_null, B.Text_gfO, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_10_null_null, B.Divider_rgr, B.SizedBox_null_10_null_null], t4);
+      t5 = A._setArrayType([A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_wVK, B.SizedBox_8_null_null_null, B.Text_w4Y, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_10_null_null, B.Divider_rgr, B.SizedBox_null_10_null_null], t4);
       B.JSArray_methods.addAll$1(t5, new A.MappedListIterable(B.List_9Lh, new A._DevConsoleState_build_closure0(), type$.MappedListIterable__Cmd_Widget));
       t5.push(B.SizedBox_null_8_null_null);
       t5.push(B.Divider_rgr);
@@ -241875,8 +241875,8 @@
     B.Shadow_dln = new A.Shadow(B.Color_vnR, B.Offset_0_0, 6);
     B.List_Ats = makeConstList([B.Shadow_dln], type$.JSArray_Shadow);
     B.TextStyle_bM0 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Ats, null, null, null);
-    B.Text_0Nv = new A.Text("v0.1.59", null, B.TextStyle_bM0, null, null, null, null, null, null);
-    B.Positioned_XWg = new A.Positioned(null, 16, 16, null, null, null, B.Text_0Nv, null);
+    B.Text_nEo = new A.Text("v0.1.60", null, B.TextStyle_bM0, null, null, null, null, null, null);
+    B.Positioned_pS6 = new A.Positioned(null, 16, 16, null, null, null, B.Text_nEo, null);
     B.ProgressIndicatorThemeData_o79 = new A.ProgressIndicatorThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.RadioThemeData_6fK = new A.RadioThemeData(null, null, null, null, null, null, null);
     B.Radius_1_1 = new A.Radius(1, 1);
@@ -242744,8 +242744,6 @@
     B.TextStyle_Fut = new A.TextStyle(true, B.Color_mQC, null, null, null, null, null, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_dvG = new A.Text("Confirm", null, B.TextStyle_Fut, null, null, null, null, null, null);
     B.Text_foW = new A.Text("Enter", null, null, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_gfO = new A.Text("v0.1.59", null, B.TextStyle_lmI, null, null, null, null, null, null);
     B.Text_jGM = new A.Text("Watch Battle", null, B.TextStyle_HBZ, null, null, null, null, null, null);
     B.Text_lOM = new A.Text("Enter", null, B.TextStyle_5dt, null, null, null, null, null, null);
     B.Text_lpV = new A.Text("Font Picker", null, B.TextStyle_7u50, null, null, null, null, null, null);
@@ -242757,6 +242755,8 @@
     B.TextStyle_RUn = new A.TextStyle(true, B.Color_UdU, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_tSF = new A.Text("Cancel", null, B.TextStyle_RUn, null, null, null, null, null, null);
     B.Text_tth = new A.Text("PvP Arena", null, B.TextStyle_DNn, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_w4Y = new A.Text("v0.1.60", null, B.TextStyle_lmI, null, null, null, null, null, null);
     B.TextStyle_x00 = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 14, B.FontWeight_6_700, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_wVK = new A.Text("Console", null, B.TextStyle_x00, null, null, null, null, null, null);
     B.Text_xKq = new A.Text("Cost: ", null, B.TextStyle_uNC, null, null, null, null, null, null);
