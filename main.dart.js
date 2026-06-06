@@ -188868,11 +188868,11 @@
       return t1;
     },
     roll$2$perfect(rng, perfect) {
-      var lo;
+      var lo, _this = this;
       if (perfect)
-        return this._maxCents$0() / 100;
-      lo = this._minCents$0();
-      return rng.nextInt$1(this._maxCents$0() - lo + 1) / 100;
+        return _this._maxCents$0() / 100;
+      lo = B.JSInt_methods.clamp$2(_this._minCents$0(), 10, _this._maxCents$0());
+      return (rng.nextInt$1(_this._maxCents$0() - lo + 1) + lo) / 100;
     }
   };
   A.Substat.prototype = {};
@@ -192311,7 +192311,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_MGW], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_28N], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._artifacts;
       t4 = _this._altarCooldownTotal;
@@ -198405,7 +198405,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A._setArrayType([A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_wVK, B.SizedBox_8_null_null_null, B.Text_7cc, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_10_null_null, B.Divider_rgr, B.SizedBox_null_10_null_null], t4);
+      t5 = A._setArrayType([A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_wVK, B.SizedBox_8_null_null_null, B.Text_HQz, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1), B.SizedBox_null_10_null_null, B.Divider_rgr, B.SizedBox_null_10_null_null], t4);
       B.JSArray_methods.addAll$1(t5, new A.MappedListIterable(B.List_jEk, new A._DevConsoleState_build_closure0(), type$.MappedListIterable__Cmd_Widget));
       t5.push(B.SizedBox_null_8_null_null);
       t5.push(B.Divider_rgr);
@@ -234514,7 +234514,7 @@
       return A.PartS_sedgwickAve(_null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, height, _null, _null, _null, _null, _null, _null);
     }, function(fontWeight) {
       var _null = null;
-      return ;
+      return A.PartS_sedgwickAve(_null, _null, _null, _null, _null, _null, _null, _null, _null, _null, fontWeight, _null, _null, _null, _null, _null, _null, _null, _null);
     }], 0, 0);
     _static(A, "part_s_g_PartS_sedgwickAveDisplay$closure", 0, null, ["call$19$background$backgroundColor$color$decoration$decorationColor$decorationStyle$decorationThickness$fontFeatures$fontSize$fontStyle$fontWeight$foreground$height$letterSpacing$locale$shadows$textBaseline$textStyle$wordSpacing", "call$0", "call$18$background$backgroundColor$color$decoration$decorationColor$decorationStyle$decorationThickness$fontFeatures$fontSize$fontStyle$fontWeight$foreground$height$letterSpacing$locale$shadows$textBaseline$wordSpacing", "call$1$color", "call$2$color$fontSize", "call$1$height", "call$1$fontWeight"], ["PartS_sedgwickAveDisplay", function() {
       var _null = null;
@@ -244454,8 +244454,8 @@
     B.Shadow_dln = new A.Shadow(B.Color_vnR, B.Offset_0_0, 6);
     B.List_Ats = makeConstList([B.Shadow_dln], type$.JSArray_Shadow);
     B.TextStyle_bM0 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Ats, null, null, null);
-    B.Text_Leg = new A.Text("v0.1.63", null, B.TextStyle_bM0, null, null, null, null, null, null);
-    B.Positioned_MGW = new A.Positioned(null, 16, 16, null, null, null, B.Text_Leg, null);
+    B.Text_wBY = new A.Text("v0.1.64", null, B.TextStyle_bM0, null, null, null, null, null, null);
+    B.Positioned_28N = new A.Positioned(null, 16, 16, null, null, null, B.Text_wBY, null);
     B.ProgressIndicatorThemeData_o79 = new A.ProgressIndicatorThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.RadioThemeData_6fK = new A.RadioThemeData(null, null, null, null, null, null, null);
     B.Radius_1_1 = new A.Radius(1, 1);
@@ -245300,8 +245300,6 @@
     B.Text_62u = new A.Text("Sweep Last", null, null, null, null, null, null, null, null);
     B.TextStyle_4Il = new A.TextStyle(true, B.Color_mQC, null, null, null, null, 20, B.FontWeight_6_700, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_6tp = new A.Text("\ud83d\udc4b  Welcome, Tester!", null, B.TextStyle_4Il, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_7cc = new A.Text("v0.1.63", null, B.TextStyle_lmI, null, null, null, null, null, null);
     B.Text_7ud = new A.Text("Select the substats to keep automatically", null, B.TextStyle_9M4, null, null, null, null, null, null);
     B.Text_80f = new A.Text("Keep stuff  ", null, null, null, null, null, null, null, null);
     B.Text_82J = new A.Text("Choose opponent", null, B.TextStyle_vPK, null, null, null, null, null, null);
@@ -245317,6 +245315,8 @@
     B.Text_FuW = new A.Text("Claim", null, B.TextStyle_3a8, null, null, null, null, null, null);
     B.TextStyle_k3c = new A.TextStyle(true, B.Color_mQC, null, null, null, null, 13, B.FontWeight_6_700, null, 1.1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_Gr3 = new A.Text("POTION REWARDS", null, B.TextStyle_k3c, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_HQz = new A.Text("v0.1.64", null, B.TextStyle_lmI, null, null, null, null, null, null);
     B.Text_I29 = new A.Text("Storage", null, B.TextStyle_5A4, null, null, null, null, null, null);
     B.Text_IQj = new A.Text("ARCHER", null, B.TextStyle_k3c, null, null, null, null, null, null);
     B.Text_J8v = new A.Text("Choose one \u2014 the other will be discarded", null, B.TextStyle_5A4, null, null, null, null, null, null);
