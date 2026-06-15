@@ -49331,12 +49331,13 @@
       _.currentPlayer = t2;
       _.key = t3;
     },
-    _PvpPlayerSlot_build_closure: function _PvpPlayerSlot_build_closure(t0, t1) {
+    _PvpPlayerSlot_build_closure: function _PvpPlayerSlot_build_closure(t0, t1, t2) {
       this.$this = t0;
-      this.context = t1;
+      this.isMe = t1;
+      this.context = t2;
     },
     _PvpPlayerSlot_build__closure: function _PvpPlayerSlot_build__closure(t0) {
-      this.$this = t0;
+      this.entry = t0;
     },
     _PvpStickyPlayerBar: function _PvpStickyPlayerBar(t0, t1, t2, t3, t4, t5, t6, t7, t8) {
       var _ = this;
@@ -49394,7 +49395,7 @@
       this.context = t1;
     },
     _FightPickerRow_build__closure: function _FightPickerRow_build__closure(t0) {
-      this.$this = t0;
+      this.entry = t0;
     },
     _FightPickerRow_build_closure: function _FightPickerRow_build_closure(t0, t1) {
       this.$this = t0;
@@ -50674,13 +50675,13 @@
       });
       return A._asyncStartSync($async$FirestoreService_deleteLeaderboardEntry, $async$completer);
     },
-    FirestoreService_updateLeaderboardEntry(uid, $name, power, hp, damage, substats, points, altarLevel, ascensionLevel) {
-      return A.FirestoreService_updateLeaderboardEntry$body(uid, $name, power, hp, damage, substats, points, altarLevel, ascensionLevel);
+    FirestoreService_updateLeaderboardEntry(uid, $name, power, hp, damage, substats, points, altarLevel, ascensionLevel, equippedSlots, familiarSlots, relicSlots) {
+      return A.FirestoreService_updateLeaderboardEntry$body(uid, $name, power, hp, damage, substats, points, altarLevel, ascensionLevel, equippedSlots, familiarSlots, relicSlots);
     },
-    FirestoreService_updateLeaderboardEntry$body(uid, $name, power, hp, damage, substats, points, altarLevel, ascensionLevel) {
+    FirestoreService_updateLeaderboardEntry$body(uid, $name, power, hp, damage, substats, points, altarLevel, ascensionLevel, equippedSlots, familiarSlots, relicSlots) {
       var $async$goto = 0,
         $async$completer = A._makeAsyncAwaitCompleter(type$.void),
-        $async$handler = 1, $async$errorStack = [], t1, t2, t3, t4, exception, $async$exception;
+        $async$handler = 1, $async$errorStack = [], t1, t2, t3, t4, t5, t6, t7, exception, $async$exception;
       var $async$FirestoreService_updateLeaderboardEntry = A._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
         if ($async$errorCode === 1) {
           $async$errorStack.push($async$result);
@@ -50694,8 +50695,14 @@
               t1 = $.$get$FirestoreService__db().collection$1("leaderboard").doc$1(uid);
               t2 = type$.String;
               t3 = substats.map$2$1(substats, new A.FirestoreService_updateLeaderboardEntry_closure(), t2, type$.double);
-              t4 = $.$get$FieldValue__factory().serverTimestamp$0();
-              t2 = A._CodecUtility_replaceValueWithDelegatesInMap(A.LinkedHashMap_LinkedHashMap$_literal(["name", $name, "power", power, "hp", hp, "damage", damage, "substats", t3, "points", points, "altarLevel", altarLevel, "ascensionLevel", ascensionLevel, "updatedAt", new A.FieldValue(t4, t4)], t2, type$.dynamic));
+              t4 = A._arrayInstanceType(equippedSlots)._eval$1("MappedListIterable<1,Map<String,@>?>");
+              t4 = A.List_List$_of(new A.MappedListIterable(equippedSlots, A.save_service_SaveService_serializeItem$closure(), t4), t4._eval$1("ListIterable.E"));
+              t5 = A._arrayInstanceType(relicSlots)._eval$1("MappedListIterable<1,Map<String,@>?>");
+              t5 = A.List_List$_of(new A.MappedListIterable(relicSlots, A.save_service_SaveService_serializeItem$closure(), t5), t5._eval$1("ListIterable.E"));
+              t6 = A._arrayInstanceType(familiarSlots)._eval$1("MappedListIterable<1,Map<String,@>?>");
+              t6 = A.List_List$_of(new A.MappedListIterable(familiarSlots, A.save_service_SaveService_serializeItem$closure(), t6), t6._eval$1("ListIterable.E"));
+              t7 = $.$get$FieldValue__factory().serverTimestamp$0();
+              t2 = A._CodecUtility_replaceValueWithDelegatesInMap(A.LinkedHashMap_LinkedHashMap$_literal(["name", $name, "power", power, "hp", hp, "damage", damage, "substats", t3, "points", points, "altarLevel", altarLevel, "ascensionLevel", ascensionLevel, "equippedSlots", t4, "relicSlots", t5, "familiarSlots", t6, "updatedAt", new A.FieldValue(t7, t7)], t2, type$.dynamic));
               t2.toString;
               $async$goto = 6;
               return A._asyncAwait(t1._cloud_firestore$_delegate.$set$2(0, t2, null), $async$FirestoreService_updateLeaderboardEntry);
@@ -50734,7 +50741,7 @@
     FirestoreService_getPlayerByName$body($name) {
       var $async$goto = 0,
         $async$completer = A._makeAsyncAwaitCompleter(type$.nullable_PlayerEntry),
-        $async$returnValue, $async$handler = 2, $async$errorStack = [], snapshot, data, rawSubs, substats, t1, rawSubs0, t2, t3, t4, t5, t6, t7, exception, $async$exception;
+        $async$returnValue, $async$handler = 2, $async$errorStack = [], snapshot, doc, data, rawSubs, substats, equippedSlots, relicSlots, familiarSlots, equippedRaw, _length, _list, i, i0, relicRaw, _length0, _list0, i1, i2, familiarRaw, _length1, _list1, i3, i4, t1, rawSubs0, t2, t3, t4, t5, t6, t7, t8, t9, t10, exception, $async$exception;
       var $async$FirestoreService_getPlayerByName = A._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
         if ($async$errorCode === 1) {
           $async$errorStack.push($async$result);
@@ -50756,13 +50763,55 @@
                 $async$goto = 1;
                 break;
               }
-              t1 = B.JSArray_methods.get$first(snapshot.get$docs()).super$_JsonDocumentSnapshot$data(0);
+              doc = B.JSArray_methods.get$first(snapshot.get$docs());
+              t1 = doc;
+              t1 = J.getInterceptor$z(t1).super$_JsonDocumentSnapshot$data(t1);
               t1.toString;
               data = t1;
               rawSubs0 = type$.nullable_Map_String_dynamic._as(J.$index$asx(data, "substats"));
               rawSubs = rawSubs0 == null ? A.LinkedHashMap_LinkedHashMap$_empty(type$.String, type$.dynamic) : rawSubs0;
               substats = A.LinkedHashMap_LinkedHashMap$_empty(type$.SubstatType, type$.double);
               J.forEach$1$ax(rawSubs, new A.FirestoreService_getPlayerByName_closure(substats));
+              equippedSlots = null;
+              relicSlots = null;
+              familiarSlots = null;
+              t1 = type$.nullable_List_dynamic;
+              equippedRaw = t1._as(J.$index$asx(data, "equippedSlots"));
+              if (equippedRaw != null) {
+                _length = 6;
+                _list = J.JSArray_JSArray$allocateGrowable(_length, type$.nullable_ItemInstance);
+                for (i = 0; i < _length; ++i) {
+                  i0 = i;
+                  t2 = i;
+                  t3 = i0 < J.get$length$asx(equippedRaw) ? A.SaveService_deserializeItem(J.$index$asx(equippedRaw, i0), B.List_QgW[i0]) : null;
+                  J.$indexSet$ax(_list, t2, t3);
+                }
+                equippedSlots = _list;
+              }
+              relicRaw = t1._as(J.$index$asx(data, "relicSlots"));
+              if (relicRaw != null) {
+                _length0 = 4;
+                _list0 = J.JSArray_JSArray$allocateGrowable(_length0, type$.nullable_ItemInstance);
+                for (i1 = 0; i1 < _length0; ++i1) {
+                  i2 = i1;
+                  t2 = i1;
+                  t3 = i2 < J.get$length$asx(relicRaw) ? A.SaveService_deserializeItem(J.$index$asx(relicRaw, i2), B.List_dht[i2]) : null;
+                  J.$indexSet$ax(_list0, t2, t3);
+                }
+                relicSlots = _list0;
+              }
+              familiarRaw = t1._as(J.$index$asx(data, "familiarSlots"));
+              if (familiarRaw != null) {
+                _length1 = 2;
+                _list1 = J.JSArray_JSArray$allocateGrowable(_length1, type$.nullable_ItemInstance);
+                for (i3 = 0; i3 < _length1; ++i3) {
+                  i4 = i3;
+                  t1 = i3;
+                  t2 = i4 < J.get$length$asx(familiarRaw) ? A.SaveService_deserializeItem(J.$index$asx(familiarRaw, i4), B.List_mn7[i4]) : null;
+                  J.$indexSet$ax(_list1, t1, t2);
+                }
+                familiarSlots = _list1;
+              }
               t1 = A._asStringQ(J.$index$asx(data, "name"));
               if (t1 == null)
                 t1 = $name;
@@ -50776,7 +50825,10 @@
                 t5 = 0;
               t6 = A._asIntQ(J.$index$asx(data, "altarLevel"));
               t7 = A._asIntQ(J.$index$asx(data, "ascensionLevel"));
-              $async$returnValue = new A.PlayerEntry(t1, t2, t3, t4, substats, t5, t6, t7, null, null, null);
+              t8 = equippedSlots;
+              t9 = relicSlots;
+              t10 = familiarSlots;
+              $async$returnValue = new A.PlayerEntry(t1, t2, t3, t4, substats, t5, t6, t7, t8, t9, t10);
               // goto return
               $async$goto = 1;
               break;
@@ -52614,19 +52666,20 @@
       this.icon = t1;
       this.key = t2;
     },
-    LeaderboardPlayerSlot: function LeaderboardPlayerSlot(t0, t1, t2, t3) {
+    LeaderboardPlayerSlot: function LeaderboardPlayerSlot(t0, t1, t2, t3, t4) {
       var _ = this;
       _.index = t0;
       _.player = t1;
       _.isCurrentPlayer = t2;
-      _.key = t3;
+      _.fetchPlayer = t3;
+      _.key = t4;
     },
     LeaderboardPlayerSlot_build_closure: function LeaderboardPlayerSlot_build_closure(t0, t1) {
       this.$this = t0;
       this.context = t1;
     },
     LeaderboardPlayerSlot_build__closure: function LeaderboardPlayerSlot_build__closure(t0) {
-      this.$this = t0;
+      this.entry = t0;
     },
     LeaderboardClanSlot: function LeaderboardClanSlot(t0, t1, t2, t3, t4, t5) {
       var _ = this;
@@ -191654,7 +191707,7 @@
         A.FirestoreService_deleteLeaderboardEntry(uid);
         return;
       }
-      A.FirestoreService_updateLeaderboardEntry(uid, _this._playerName, power, _this.get$_totalHP(), _this.get$_totalDamage(), subs, _this._pvpPoints, _this._altarLevel, _this._ascensionLevel);
+      A.FirestoreService_updateLeaderboardEntry(uid, _this._playerName, power, _this.get$_totalHP(), _this.get$_totalDamage(), subs, _this._pvpPoints, _this._altarLevel, _this._ascensionLevel, _this._equippedSlots, _this._familiarSlots, _this._relicSlots);
     },
     _syncClanLeaderboard$0() {
       var $async$goto = 0,
@@ -192771,7 +192824,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_sCn], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_tsZ], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._equippedSlots;
       t4 = _this._relicSlots;
@@ -195790,18 +195843,60 @@
       t4 = A.Border_Border$all(t4, isMe ? 1.5 : 1);
       t5 = A.BorderRadius$circular(8);
       t6 = type$.JSArray_Widget;
-      return A.GestureDetector$(_null, A.Container$(_null, A.Row$(A._setArrayType([A.SizedBox$(A.Text$("" + (_this.index + 1), _null, _null, _null, _null, B.TextStyle_W5i, _null, _null), _null, 24), B.SizedBox_8_null_null_null, B.Icon_Bob, B.SizedBox_10_null_null_null, A.Expanded$(A.Row$(A._setArrayType([new A.Flexible(1, B.FlexFit_1, A.Text$(t2, _null, B.TextOverflow_2, _null, _null, B.TextStyle_EP8, _null, _null), _null), B.SizedBox_8_null_null_null, B.Icon_Nis, B.SizedBox_2_null_null_null, A.Text$(A.fmtNumber(t1.power), _null, _null, _null, _null, B.TextStyle_aGw, _null, _null)], t6), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), 1), B.SizedBox_8_null_null_null, A.Text$("" + t1.points + " pts", _null, _null, _null, _null, B.TextStyle_W5i, _null, _null)], t6), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), B.Clip_0, _null, new A.BoxDecoration(t3, _null, t4, t5, _null, _null, B.BoxShape_0), _null, B.EdgeInsets_0_0_0_8, B.EdgeInsets_14_10_14_10, _null), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._PvpPlayerSlot_build_closure(_this, context), _null, _null, _null, _null, _null, _null);
+      return A.GestureDetector$(_null, A.Container$(_null, A.Row$(A._setArrayType([A.SizedBox$(A.Text$("" + (_this.index + 1), _null, _null, _null, _null, B.TextStyle_W5i, _null, _null), _null, 24), B.SizedBox_8_null_null_null, B.Icon_Bob, B.SizedBox_10_null_null_null, A.Expanded$(A.Row$(A._setArrayType([new A.Flexible(1, B.FlexFit_1, A.Text$(t2, _null, B.TextOverflow_2, _null, _null, B.TextStyle_EP8, _null, _null), _null), B.SizedBox_8_null_null_null, B.Icon_Nis, B.SizedBox_2_null_null_null, A.Text$(A.fmtNumber(t1.power), _null, _null, _null, _null, B.TextStyle_aGw, _null, _null)], t6), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), 1), B.SizedBox_8_null_null_null, A.Text$("" + t1.points + " pts", _null, _null, _null, _null, B.TextStyle_W5i, _null, _null)], t6), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), B.Clip_0, _null, new A.BoxDecoration(t3, _null, t4, t5, _null, _null, B.BoxShape_0), _null, B.EdgeInsets_0_0_0_8, B.EdgeInsets_14_10_14_10, _null), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._PvpPlayerSlot_build_closure(_this, isMe, context), _null, _null, _null, _null, _null, _null);
     }
   };
   A._PvpPlayerSlot_build_closure.prototype = {
     call$0() {
-      return A.showDialog(true, new A._PvpPlayerSlot_build__closure(this.$this), this.context, type$.dynamic);
+      var $async$goto = 0,
+        $async$completer = A._makeAsyncAwaitCompleter(type$.void),
+        $async$returnValue, $async$self = this, entry, t2, t1;
+      var $async$call$0 = A._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return A._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              t1 = $async$self.$this;
+              $async$goto = $async$self.isMe ? 3 : 5;
+              break;
+            case 3:
+              // then
+              entry = t1.currentPlayer;
+              // goto join
+              $async$goto = 4;
+              break;
+            case 5:
+              // else
+              t1 = t1.player;
+              $async$goto = 6;
+              return A._asyncAwait(A.FirestoreService_getPlayerByName(t1.name), $async$call$0);
+            case 6:
+              // returning from await.
+              t2 = $async$result;
+              entry = t2 == null ? t1 : t2;
+            case 4:
+              // join
+              t1 = $async$self.context;
+              if (t1._widget == null) {
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+              A.showDialog(true, new A._PvpPlayerSlot_build__closure(entry), t1, type$.dynamic);
+            case 1:
+              // return
+              return A._asyncReturn($async$returnValue, $async$completer);
+          }
+      });
+      return A._asyncStartSync($async$call$0, $async$completer);
     },
-    $signature: 1
+    $signature: 11
   };
   A._PvpPlayerSlot_build__closure.prototype = {
     call$1(__wc0_formal) {
-      return new A.PlayerProfileDialog(this.$this.player, null);
+      return new A.PlayerProfileDialog(this.entry, null);
     },
     $signature: 71
   };
@@ -195891,13 +195986,42 @@
   };
   A._FightPickerRow_build_closure0.prototype = {
     call$0() {
-      return A.showDialog(true, new A._FightPickerRow_build__closure(this.$this), this.context, type$.dynamic);
+      var $async$goto = 0,
+        $async$completer = A._makeAsyncAwaitCompleter(type$.void),
+        $async$returnValue, $async$self = this, t1, entry, entry0;
+      var $async$call$0 = A._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return A._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              entry = $async$self.$this.player;
+              $async$goto = 3;
+              return A._asyncAwait(A.FirestoreService_getPlayerByName(entry.name), $async$call$0);
+            case 3:
+              // returning from await.
+              entry0 = $async$result;
+              entry = entry0 == null ? entry : entry0;
+              t1 = $async$self.context;
+              if (t1._widget == null) {
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+              A.showDialog(true, new A._FightPickerRow_build__closure(entry), t1, type$.dynamic);
+            case 1:
+              // return
+              return A._asyncReturn($async$returnValue, $async$completer);
+          }
+      });
+      return A._asyncStartSync($async$call$0, $async$completer);
     },
-    $signature: 1
+    $signature: 11
   };
   A._FightPickerRow_build__closure.prototype = {
     call$1(__wc0_formal) {
-      return new A.PlayerProfileDialog(this.$this.player, null);
+      return new A.PlayerProfileDialog(this.entry, null);
     },
     $signature: 71
   };
@@ -197678,7 +197802,7 @@
   };
   A.FirestoreService_getTop100_closure0.prototype = {
     call$1(doc) {
-      var data, rawSubs, substats, rawSubs0, t2, t3, t4, t5,
+      var data, rawSubs, substats, equippedSlots, relicSlots, familiarSlots, equippedRaw, _length, _list, i, i0, relicRaw, _length0, _list0, i1, i2, familiarRaw, _length1, _list1, i3, i4, rawSubs0, t2, t3, t4, t5,
         t1 = doc.super$_JsonDocumentSnapshot$data(0);
       t1.toString;
       data = t1;
@@ -197686,6 +197810,46 @@
       rawSubs = rawSubs0 == null ? A.LinkedHashMap_LinkedHashMap$_empty(type$.String, type$.dynamic) : rawSubs0;
       substats = A.LinkedHashMap_LinkedHashMap$_empty(type$.SubstatType, type$.double);
       J.forEach$1$ax(rawSubs, new A.FirestoreService_getTop100__closure(substats));
+      equippedSlots = null;
+      relicSlots = null;
+      familiarSlots = null;
+      t1 = type$.nullable_List_dynamic;
+      equippedRaw = t1._as(J.$index$asx(data, "equippedSlots"));
+      if (equippedRaw != null) {
+        _length = 6;
+        _list = J.JSArray_JSArray$allocateGrowable(_length, type$.nullable_ItemInstance);
+        for (i = 0; i < _length; ++i) {
+          i0 = i;
+          t2 = i;
+          t3 = i0 < J.get$length$asx(equippedRaw) ? A.SaveService_deserializeItem(J.$index$asx(equippedRaw, i0), B.List_QgW[i0]) : null;
+          J.$indexSet$ax(_list, t2, t3);
+        }
+        equippedSlots = _list;
+      }
+      relicRaw = t1._as(J.$index$asx(data, "relicSlots"));
+      if (relicRaw != null) {
+        _length0 = 4;
+        _list0 = J.JSArray_JSArray$allocateGrowable(_length0, type$.nullable_ItemInstance);
+        for (i1 = 0; i1 < _length0; ++i1) {
+          i2 = i1;
+          t2 = i1;
+          t3 = i2 < J.get$length$asx(relicRaw) ? A.SaveService_deserializeItem(J.$index$asx(relicRaw, i2), B.List_dht[i2]) : null;
+          J.$indexSet$ax(_list0, t2, t3);
+        }
+        relicSlots = _list0;
+      }
+      familiarRaw = t1._as(J.$index$asx(data, "familiarSlots"));
+      if (familiarRaw != null) {
+        _length1 = 2;
+        _list1 = J.JSArray_JSArray$allocateGrowable(_length1, type$.nullable_ItemInstance);
+        for (i3 = 0; i3 < _length1; ++i3) {
+          i4 = i3;
+          t1 = i3;
+          t2 = i4 < J.get$length$asx(familiarRaw) ? A.SaveService_deserializeItem(J.$index$asx(familiarRaw, i4), B.List_mn7[i4]) : null;
+          J.$indexSet$ax(_list1, t1, t2);
+        }
+        familiarSlots = _list1;
+      }
       t1 = A._asString(J.$index$asx(data, "name"));
       t2 = A._asIntQ(J.$index$asx(data, "power"));
       if (t2 == null)
@@ -197695,7 +197859,7 @@
       t5 = A._asIntQ(J.$index$asx(data, "points"));
       if (t5 == null)
         t5 = 0;
-      return new A.PlayerEntry(t1, t2, t3, t4, substats, t5, A._asIntQ(J.$index$asx(data, "altarLevel")), A._asIntQ(J.$index$asx(data, "ascensionLevel")), null, null, null);
+      return new A.PlayerEntry(t1, t2, t3, t4, substats, t5, A._asIntQ(J.$index$asx(data, "altarLevel")), A._asIntQ(J.$index$asx(data, "ascensionLevel")), equippedSlots, relicSlots, familiarSlots);
     },
     $signature: 689
   };
@@ -199289,7 +199453,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_rAJ, B.SizedBox_8_null_null_null, B.Text_7Dl, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
+      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_rAJ, B.SizedBox_8_null_null_null, B.Text_MV3, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
       t6 = type$.MappedListIterable__Cmd_GestureDetector;
       t6 = A.List_List$_of(new A.MappedListIterable(B.List_DmM, new A._DevConsoleState_build_closure0(_this), t6), t6._eval$1("ListIterable.E"));
       t6 = A.Expanded$(A.Scrollbar$(A.SingleChildScrollView$(A.Column$(t6, B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), _null, B.Axis_1), _null, true), 1);
@@ -199993,7 +200157,7 @@
         t4 = this.context;
       t2 = t1._itemCard$5$onTap$stronger(t2, "Current", false, new A.CompareDialog_build__closure(t4), currentStronger);
       t5 = currentStronger == null ? null : !currentStronger;
-      return A.Column$(A._setArrayType([t2, B.SizedBox_null_8_null_null, B.Row_H0I, B.SizedBox_null_8_null_null, t1._itemCard$5$onTap$stronger(t3, "New", true, new (t1, t4), t5)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1);
+      return A.Column$(A._setArrayType([t2, B.SizedBox_null_8_null_null, B.Row_H0I, B.SizedBox_null_8_null_null, t1._itemCard$5$onTap$stronger(t3, "New", true, new A.CompareDialog_build__closure0(t1, t4), t5)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1);
     },
     $signature: 720
   };
@@ -200135,13 +200299,56 @@
   };
   A.LeaderboardPlayerSlot_build_closure.prototype = {
     call$0() {
-      return A.showDialog(true, new A.LeaderboardPlayerSlot_build__closure(this.$this), this.context, type$.dynamic);
+      var $async$goto = 0,
+        $async$completer = A._makeAsyncAwaitCompleter(type$.void),
+        $async$returnValue, $async$self = this, entry, t2, t1;
+      var $async$call$0 = A._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return A._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              t1 = $async$self.$this;
+              $async$goto = t1.isCurrentPlayer ? 3 : 5;
+              break;
+            case 3:
+              // then
+              entry = t1.player;
+              // goto join
+              $async$goto = 4;
+              break;
+            case 5:
+              // else
+              t2 = t1.player;
+              t1 = t1.fetchPlayer.call$1(t2.name);
+              $async$goto = 6;
+              return A._asyncAwait(type$.Future_nullable_PlayerEntry._is(t1) ? t1 : A._Future$value(t1, type$.nullable_PlayerEntry), $async$call$0);
+            case 6:
+              // returning from await.
+              t1 = $async$result;
+              entry = t1 == null ? t2 : t1;
+            case 4:
+              // join
+              t1 = $async$self.context;
+              if (t1._widget == null) {
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+              A.showDialog(true, new A.LeaderboardPlayerSlot_build__closure(entry), t1, type$.dynamic);
+            case 1:
+              // return
+              return A._asyncReturn($async$returnValue, $async$completer);
+          }
+      });
+      return A._asyncStartSync($async$call$0, $async$completer);
     },
-    $signature: 1
+    $signature: 11
   };
   A.LeaderboardPlayerSlot_build__closure.prototype = {
     call$1(__wc0_formal) {
-      return new A.PlayerProfileDialog(this.$this.player, null);
+      return new A.PlayerProfileDialog(this.entry, null);
     },
     $signature: 71
   };
@@ -200277,21 +200484,27 @@
   };
   A._EquipmentGrid.prototype = {
     build$1(context) {
-      var t2, i, t3, _null = null,
-        t1 = type$.Widget,
-        _list = J.JSArray_JSArray$allocateGrowable(6, t1);
-      for (t2 = this.equippedSlots, i = 0; i < 6; ++i)
-        _list[i] = new A.Expanded(1, B.FlexFit_0, new A.AspectRatio(1, new A.ItemSlot(B.Color_mRi, t2[i], "Equipment", _null), _null), _null);
-      t2 = A.Row$(_list, B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
-      _list = J.JSArray_JSArray$allocateGrowable(4, t1);
-      for (t3 = this.relicSlots, i = 0; i < 4; ++i)
+      var i, t3, t4, _null = null,
+        t1 = this.equippedSlots,
+        _length = t1.length,
+        t2 = type$.Widget,
+        _list = J.JSArray_JSArray$allocateGrowable(_length, t2);
+      for (i = 0; i < _length; ++i)
+        _list[i] = new A.Expanded(1, B.FlexFit_0, new A.AspectRatio(1, new A.ItemSlot(B.Color_mRi, t1[i], "Equipment", _null), _null), _null);
+      t1 = A.Row$(_list, B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
+      t3 = this.relicSlots;
+      _length = t3.length;
+      _list = J.JSArray_JSArray$allocateGrowable(_length, t2);
+      for (i = 0; i < _length; ++i)
         _list[i] = new A.Expanded(1, B.FlexFit_0, new A.AspectRatio(1, new A.ItemSlot(B.Color_Jhh, t3[i], "Relic", _null), _null), _null);
       t3 = A.Expanded$(A.Row$(_list, B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), 4);
-      _list = J.JSArray_JSArray$allocateGrowable(2, t1);
-      for (t1 = this.familiarSlots, i = 0; i < 2; ++i)
-        _list[i] = new A.Expanded(1, B.FlexFit_0, new A.AspectRatio(1, new A.ItemSlot(B.Color_nsp, t1[i], "Familiar", _null), _null), _null);
-      t1 = type$.JSArray_Widget;
-      return A.Column$(A._setArrayType([t2, B.SizedBox_null_4_null_null, A.Row$(A._setArrayType([t3, A.Expanded$(A.Row$(_list, B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), 2)], t1), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0)], t1), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1);
+      t4 = this.familiarSlots;
+      _length = t4.length;
+      _list = J.JSArray_JSArray$allocateGrowable(_length, t2);
+      for (i = 0; i < _length; ++i)
+        _list[i] = new A.Expanded(1, B.FlexFit_0, new A.AspectRatio(1, new A.ItemSlot(B.Color_nsp, t4[i], "Familiar", _null), _null), _null);
+      t2 = type$.JSArray_Widget;
+      return A.Column$(A._setArrayType([t1, B.SizedBox_null_4_null_null, A.Row$(A._setArrayType([t3, A.Expanded$(A.Row$(_list, B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), 2)], t2), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0)], t2), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1);
     }
   };
   A._StatRow.prototype = {
@@ -202309,7 +202522,7 @@
       t1 = this.displayList;
       if (i < t1.length) {
         t1 = t1[i];
-        return new A.LeaderboardPlayerSlot(i, t1, t1.name === this.$this._widget.currentPlayer.name, null);
+        return new A.LeaderboardPlayerSlot(i, t1, t1.name === this.$this._widget.currentPlayer.name, A.firestore_service_FirestoreService_getPlayerByName$closure(), null);
       }
       return new A.LeaderboardEmptySlot(i, B.IconData_58519_MaterialIcons_false, null);
     },
@@ -241956,6 +242169,7 @@
       Future_bool_Function: findType("Future<bool>()"),
       Future_dynamic: findType("Future<@>"),
       Future_nullable_ByteData: findType("Future<ByteData?>"),
+      Future_nullable_PlayerEntry: findType("Future<PlayerEntry?>"),
       Future_void: findType("Future<~>"),
       GeneralConstantMap_ShortcutActivator_Intent: findType("GeneralConstantMap<ShortcutActivator,Intent>"),
       GeneralConstantMap_int_Color: findType("GeneralConstantMap<int,Color>"),
@@ -244607,6 +244821,7 @@
     B.List_empty21 = makeConstList([], type$.JSArray_Widget);
     B.List_empty0 = makeConstList([], type$.JSArray_int);
     B.List_empty12 = makeConstList([], type$.JSArray_dynamic);
+    B.List_empty22 = makeConstList([], A.findType("JSArray<ItemInstance?>"));
     B.List_empty2 = makeConstList([], type$.JSArray_nullable_String);
     B.List_etK = makeConstList(["Blade", "Wolf", "Fist", "Guard", "Rider", "Fox", "Hawk", "Bear", "Lion", "Boar"], type$.JSArray_String);
     B.Icon_hsm = new A.Icon(B.IconData_58861_MaterialIcons_false, 16, B.Color_mQC, null, null, null);
@@ -245761,8 +245976,8 @@
     B.Shadow_dln = new A.Shadow(B.Color_vnR, B.Offset_0_0, 6);
     B.List_Ats = makeConstList([B.Shadow_dln], type$.JSArray_Shadow);
     B.TextStyle_bM0 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Ats, null, null, null);
-    B.Text_6J2 = new A.Text("v0.1.72", null, B.TextStyle_bM0, null, null, null, null, null, null, null);
-    B.Positioned_sCn = new A.Positioned(null, 16, 16, null, null, null, B.Text_6J2, null);
+    B.Text_ozO = new A.Text("v0.1.73", null, B.TextStyle_bM0, null, null, null, null, null, null, null);
+    B.Positioned_tsZ = new A.Positioned(null, 16, 16, null, null, null, B.Text_ozO, null);
     B.ProgressIndicatorThemeData_o79 = new A.ProgressIndicatorThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.RadioThemeData_6fK = new A.RadioThemeData(null, null, null, null, null, null, null);
     B.Radius_1_1 = new A.Radius(1, 1);
@@ -246603,8 +246818,6 @@
     B.TextStyle_XZc0 = new A.TextStyle(true, B.Color_mQC, null, null, null, null, 14, B.FontWeight_6_700, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_6j5 = new A.Text("Campaign Config", null, B.TextStyle_XZc0, null, null, null, null, null, null, null);
     B.Text_6rS = new A.Text("Name already taken", null, B.TextStyle_uu9, null, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_7Dl = new A.Text("v0.1.72", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_7do = new A.Text("Back", null, null, null, null, null, null, null, null, null);
     B.Text_9Tl = new A.Text("Cost: ", null, B.TextStyle_uNC, null, null, null, null, null, null, null);
     B.Text_Afu = new A.Text("Altar Level", null, B.TextStyle_yJE, null, null, null, null, null, null, null);
@@ -246629,6 +246842,8 @@
     B.Text_LZ8 = new A.Text("Idle Rewards", null, B.TextStyle_DNn, null, null, null, null, null, null, null);
     B.Text_Lw5 = new A.Text("Leave Clan", null, B.TextStyle_NzT, null, null, null, null, null, null, null);
     B.Text_M05 = new A.Text("Close", null, null, null, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_MV3 = new A.Text("v0.1.73", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_O3h = new A.Text("WARRIOR", null, B.TextStyle_k3c, null, null, null, null, null, null, null);
     B.Text_Odo = new A.Text("Altar Substat Chances", null, B.TextStyle_vPK, null, null, null, null, null, null, null);
     B.TextStyle_4NA = new A.TextStyle(true, B.Color_kAU, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
