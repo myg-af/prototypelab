@@ -192771,7 +192771,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_kaA], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_sCn], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._equippedSlots;
       t4 = _this._relicSlots;
@@ -199289,7 +199289,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_rAJ, B.SizedBox_8_null_null_null, B.Text_AFX, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
+      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_rAJ, B.SizedBox_8_null_null_null, B.Text_7Dl, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
       t6 = type$.MappedListIterable__Cmd_GestureDetector;
       t6 = A.List_List$_of(new A.MappedListIterable(B.List_DmM, new A._DevConsoleState_build_closure0(_this), t6), t6._eval$1("ListIterable.E"));
       t6 = A.Expanded$(A.Scrollbar$(A.SingleChildScrollView$(A.Column$(t6, B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), _null, B.Axis_1), _null, true), 1);
@@ -199969,7 +199969,7 @@
         t6.push(B.Text_vSw);
       for (t7 = item.substats, t8 = t7.length, _i = 0; _i < t7.length; t7.length === t8 || (0, A.throwConcurrentModificationError)(t7), ++_i) {
         sub = t7[_i];
-        t6.push(A.Text$(sub.type.get$label(0) + " " + ("+" + A.fmtPct(sub.value) + "%"), _null, _null, _null, _null, B.TextStyle_qXQ, _null, _null));
+        t6.push(A.Text$(sub.type.get$label(0) + " " + ("+" + A.fmtPct(sub.value) + "%"), _null, _null, _null, _null, B.TextStyle_ACa, _null, _null));
       }
       return A.GestureDetector$(_null, A.Container$(_null, A.Row$(A._setArrayType([t3, B.SizedBox_12_null_null_null, A.Expanded$(A.Column$(A._setArrayType([t5, B.SizedBox_null_4_null_null, A.Column$(t6, B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1)], t4), B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), 1)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), B.Clip_0, _null, new A.BoxDecoration(B.Color_zEH, _null, t2, t1, _null, _null, B.BoxShape_0), _null, _null, B.EdgeInsets_12_12_12_12, _null), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, onTap, _null, _null, _null, _null, _null, _null);
     },
@@ -199993,7 +199993,7 @@
         t4 = this.context;
       t2 = t1._itemCard$5$onTap$stronger(t2, "Current", false, new A.CompareDialog_build__closure(t4), currentStronger);
       t5 = currentStronger == null ? null : !currentStronger;
-      return A.Column$(A._setArrayType([t2, B.SizedBox_null_8_null_null, B.Row_H0I, B.SizedBox_null_8_null_null, t1._itemCard$5$onTap$stronger(t3, "New", true, new A.CompareDialog_build__closure0(t1, t4), t5)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1);
+      return A.Column$(A._setArrayType([t2, B.SizedBox_null_8_null_null, B.Row_H0I, B.SizedBox_null_8_null_null, t1._itemCard$5$onTap$stronger(t3, "New", true, new (t1, t4), t5)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1);
     },
     $signature: 720
   };
@@ -200085,7 +200085,7 @@
     build$1(context) {
       var _null = null,
         t1 = this.substat;
-      return A.Row$(A._setArrayType([A.Text$(t1.type.get$label(0), _null, _null, _null, _null, B.TextStyle_uNC, _null, _null), B.Spacer_null, A.Text$("+" + A.fmtPct(t1.value) + "%", _null, _null, _null, _null, B.TextStyle_yBS, _null, _null)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
+      return A.Row$(A._setArrayType([A.Text$(t1.type.get$label(0), _null, _null, _null, _null, B.TextStyle_uNC, _null, _null), B.Spacer_null, A.Text$("+" + A.fmtPct(t1.value) + "%", _null, _null, _null, _null, B.TextStyle_X2q, _null, _null)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
     }
   };
   A.PlayerEntry.prototype = {};
@@ -245761,8 +245761,8 @@
     B.Shadow_dln = new A.Shadow(B.Color_vnR, B.Offset_0_0, 6);
     B.List_Ats = makeConstList([B.Shadow_dln], type$.JSArray_Shadow);
     B.TextStyle_bM0 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Ats, null, null, null);
-    B.Text_ooa = new A.Text("v0.1.71", null, B.TextStyle_bM0, null, null, null, null, null, null, null);
-    B.Positioned_kaA = new A.Positioned(null, 16, 16, null, null, null, B.Text_ooa, null);
+    B.Text_6J2 = new A.Text("v0.1.72", null, B.TextStyle_bM0, null, null, null, null, null, null, null);
+    B.Positioned_sCn = new A.Positioned(null, 16, 16, null, null, null, B.Text_6J2, null);
     B.ProgressIndicatorThemeData_o79 = new A.ProgressIndicatorThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.RadioThemeData_6fK = new A.RadioThemeData(null, null, null, null, null, null, null);
     B.Radius_1_1 = new A.Radius(1, 1);
@@ -246266,6 +246266,7 @@
     B.TextStyle_8mM = new A.TextStyle(true, B.Color_kd7, null, null, null, null, 12, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_8x7 = new A.TextStyle(true, null, null, null, null, null, 10, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_9IC = new A.TextStyle(true, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.TextDecoration_1, null, null, null, null, null, null, null, null);
+    B.TextStyle_ACa = new A.TextStyle(true, B.Color_wst, null, null, null, null, 12, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_AsB = new A.TextStyle(true, B.Color_L7B, null, null, null, null, 9, B.FontWeight_6_700, null, 0.5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_COM = new A.TextStyle(true, B.MaterialColor_vIZ, null, null, null, null, 16, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_CfR = new A.TextStyle(true, B.Color_wst, null, "monospace", null, null, 12, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
@@ -246321,7 +246322,6 @@
     B.TextStyle_oUd = new A.TextStyle(true, null, null, null, null, null, null, B.FontWeight_3_400, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_ogX = new A.TextStyle(true, B.Color_kd7, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_qDc = new A.TextStyle(true, B.Color_UdU, null, null, null, null, 12, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.TextStyle_qXQ = new A.TextStyle(true, B.Color_h8T, null, null, null, null, 12, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_sE0 = new A.TextStyle(true, B.Color_7Fu, null, null, null, null, 12, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_tvN = new A.TextStyle(true, B.Color_wst, null, null, null, null, 20, B.FontWeight_6_700, null, 2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_uNC = new A.TextStyle(true, B.Color_UdU, null, null, null, null, 13, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
@@ -246603,10 +246603,10 @@
     B.TextStyle_XZc0 = new A.TextStyle(true, B.Color_mQC, null, null, null, null, 14, B.FontWeight_6_700, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_6j5 = new A.Text("Campaign Config", null, B.TextStyle_XZc0, null, null, null, null, null, null, null);
     B.Text_6rS = new A.Text("Name already taken", null, B.TextStyle_uu9, null, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_7Dl = new A.Text("v0.1.72", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_7do = new A.Text("Back", null, null, null, null, null, null, null, null, null);
     B.Text_9Tl = new A.Text("Cost: ", null, B.TextStyle_uNC, null, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_AFX = new A.Text("v0.1.71", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_Afu = new A.Text("Altar Level", null, B.TextStyle_yJE, null, null, null, null, null, null, null);
     B.Text_Aid = new A.Text("Player Rankings", null, B.TextStyle_YrJ, null, null, null, null, null, null, null);
     B.TextStyle_Fut = new A.TextStyle(true, B.Color_mQC, null, null, null, null, null, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
