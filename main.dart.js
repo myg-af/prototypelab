@@ -192824,7 +192824,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_tsZ], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_EFB], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._equippedSlots;
       t4 = _this._relicSlots;
@@ -195104,7 +195104,7 @@
   };
   A._GameScreenState_build____closure.prototype = {
     call$0() {
-      return this.$this._campaignWave = B.JSInt_methods.clamp$2(this.n, 1, 9999);
+      return this.$this._campaignWave = (B.JSInt_methods.clamp$2(this.n, 1, 9999) - 1) * 10 + 1;
     },
     $signature: 1
   };
@@ -199453,7 +199453,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_rAJ, B.SizedBox_8_null_null_null, B.Text_MV3, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
+      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_rAJ, B.SizedBox_8_null_null_null, B.Text_lA5, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
       t6 = type$.MappedListIterable__Cmd_GestureDetector;
       t6 = A.List_List$_of(new A.MappedListIterable(B.List_DmM, new A._DevConsoleState_build_closure0(_this), t6), t6._eval$1("ListIterable.E"));
       t6 = A.Expanded$(A.Scrollbar$(A.SingleChildScrollView$(A.Column$(t6, B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), _null, B.Axis_1), _null, true), 1);
@@ -208295,7 +208295,7 @@
                                 }
                               }
                             }
-                          }
+                          
                         }
                       }
                     }
@@ -245976,8 +245976,8 @@
     B.Shadow_dln = new A.Shadow(B.Color_vnR, B.Offset_0_0, 6);
     B.List_Ats = makeConstList([B.Shadow_dln], type$.JSArray_Shadow);
     B.TextStyle_bM0 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6_700, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Ats, null, null, null);
-    B.Text_ozO = new A.Text("v0.1.73", null, B.TextStyle_bM0, null, null, null, null, null, null, null);
-    B.Positioned_tsZ = new A.Positioned(null, 16, 16, null, null, null, B.Text_ozO, null);
+    B.Text_SZc = new A.Text("v0.1.74", null, B.TextStyle_bM0, null, null, null, null, null, null, null);
+    B.Positioned_EFB = new A.Positioned(null, 16, 16, null, null, null, B.Text_SZc, null);
     B.ProgressIndicatorThemeData_o79 = new A.ProgressIndicatorThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.RadioThemeData_6fK = new A.RadioThemeData(null, null, null, null, null, null, null);
     B.Radius_1_1 = new A.Radius(1, 1);
@@ -246842,8 +246842,6 @@
     B.Text_LZ8 = new A.Text("Idle Rewards", null, B.TextStyle_DNn, null, null, null, null, null, null, null);
     B.Text_Lw5 = new A.Text("Leave Clan", null, B.TextStyle_NzT, null, null, null, null, null, null, null);
     B.Text_M05 = new A.Text("Close", null, null, null, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_MV3 = new A.Text("v0.1.73", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_O3h = new A.Text("WARRIOR", null, B.TextStyle_k3c, null, null, null, null, null, null, null);
     B.Text_Odo = new A.Text("Altar Substat Chances", null, B.TextStyle_vPK, null, null, null, null, null, null, null);
     B.TextStyle_4NA = new A.TextStyle(true, B.Color_kAU, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
@@ -246879,6 +246877,8 @@
     B.Text_ig9 = new A.Text("Choose Later", null, B.TextStyle_yFz, null, null, null, null, null, null, null);
     B.TextStyle_RUn = new A.TextStyle(true, B.Color_UdU, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_kOS = new A.Text("Cancel", null, B.TextStyle_RUn, null, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_lA5 = new A.Text("v0.1.74", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_lFl = new A.Text("Attacks: ", null, B.TextStyle_5A4, null, null, null, null, null, null, null);
     B.Text_lzH = new A.Text("Thank you for testing this prototype.\nYour feedback helps shape the game!", null, B.TextStyle_LE6, B.TextAlign_2, null, null, null, null, null, null);
     B.Text_nCD = new A.Text("Replace", null, B.TextStyle_TJs, null, null, null, null, null, null, null);
