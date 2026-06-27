@@ -234830,8 +234830,7 @@
       _this._scheduleSpawns$0();
     },
     _buildEnemiesForWave$1(wave) {
-      var t2, _length, _list, t3, i, t4, t5, t6, _this = this,
-        _s9_ = "_maxWaves",
+      var t2, _length, _list, t3, i, t4, t5, _this = this,
         cfg = $.$get$DungeonBalanceConfig_instance(),
         t1 = _this._widget,
         lv = t1.dungeonLevel,
@@ -234846,7 +234845,7 @@
         }
         if (2 === _0_0) {
           t1 = _this.___DungeonCombatScreenState__maxWaves_F;
-          t1 === $ && A.throwLateFieldNI(_s9_);
+          t1 === $ && A.throwLateFieldNI("_maxWaves");
           _length = wave < t1 ? 2 : 3;
           t1 = type$._DungeonEnemy;
           _list = J.JSArray_JSArray$allocateGrowable(_length, t1);
@@ -234858,26 +234857,24 @@
           t1 = A.List_List$_of(_list, t1);
           break $label0$0;
         }
-        t1 = _this.___DungeonCombatScreenState__maxWaves_F;
-        t1 === $ && A.throwLateFieldNI(_s9_);
-        _length = wave < t1 ? 4 : 5;
-        t2 = type$._DungeonEnemy;
-        _list = J.JSArray_JSArray$allocateGrowable(_length, t2);
-        for (t3 = _this._dungeon_combat_screen$_rng, t4 = lv - 1, i = 0; i < _length; ++i) {
-          t5 = t3.nextDouble$0();
-          t6 = B.JSNumber_methods.round$0(cfg.enemyHpBase * Math.pow(1 + cfg.hpScalePercent / 100, t4));
-          _list[i] = new A._DungeonEnemy(1.15, 0.375 + t5 * 0.25, t6, t6, B.MonsterType_0);
+        _length = wave === 1 ? 2 : 3;
+        t1 = type$._DungeonEnemy;
+        _list = J.JSArray_JSArray$allocateGrowable(_length, t1);
+        for (t2 = _this._dungeon_combat_screen$_rng, t3 = lv - 1, i = 0; i < _length; ++i) {
+          t4 = t2.nextDouble$0();
+          t5 = B.JSNumber_methods.round$0(cfg.enemyHpBase * Math.pow(1 + cfg.hpScalePercent / 100, t3));
+          _list[i] = new A._DungeonEnemy(1.15, 0.375 + t4 * 0.25, t5, t5, B.MonsterType_0);
         }
-        t5 = A.List_List$_of(_list, t2);
-        _length = wave < t1 ? 3 : 4;
-        _list = J.JSArray_JSArray$allocateGrowable(_length, t2);
+        t4 = A.List_List$_of(_list, t1);
+        _length = wave === 3 ? 3 : 2;
+        _list = J.JSArray_JSArray$allocateGrowable(_length, t1);
         for (i = 0; i < _length; ++i) {
-          t1 = t3.nextDouble$0();
-          t2 = B.JSNumber_methods.round$0(cfg.archerHpBase * Math.pow(1 + cfg.hpScalePercent / 100, t4));
-          _list[i] = new A._DungeonEnemy(1.15, 0.375 + t1 * 0.25, t2, t2, B.MonsterType_1);
+          t1 = t2.nextDouble$0();
+          t5 = B.JSNumber_methods.round$0(cfg.archerHpBase * Math.pow(1 + cfg.hpScalePercent / 100, t3));
+          _list[i] = new A._DungeonEnemy(1.15, 0.375 + t1 * 0.25, t5, t5, B.MonsterType_1);
         }
-        B.JSArray_methods.addAll$1(t5, _list);
-        t1 = t5;
+        B.JSArray_methods.addAll$1(t4, _list);
+        t1 = t4;
         break $label0$0;
       }
       return t1;
@@ -237243,7 +237240,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_WXa], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_gvA], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._equippedSlots;
       t4 = _this._relicSlots;
@@ -245504,7 +245501,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_ZQR, B.SizedBox_8_null_null_null, B.Text_lA5, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
+      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_ZQR, B.SizedBox_8_null_null_null, B.Text_M5u, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
       t6 = type$.MappedListIterable__Cmd_GestureDetector;
       t6 = A.List_List$_of(new A.MappedListIterable(B.List_TWe, type$.GestureDetector_Function__Cmd._as(new A._DevConsoleState_build_closure0(_this)), t6), t6._eval$1("ListIterable.E"));
       t6 = A.Expanded$(A.Scrollbar$(A.SingleChildScrollView$(A.Column$(t6, B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), _null, B.Axis_1), _null, true), 1);
@@ -293148,11 +293145,11 @@
     B.DecoratedBox_ahe = new A.DecoratedBox(B.BoxDecoration_wWU, B.DecorationPosition_0, null, null);
     B.IgnorePointer_Rqn = new A.IgnorePointer(true, B.DecoratedBox_ahe, null);
     B.Positioned_FGc = new A.Positioned(0, 0, 0, 0, null, null, B.IgnorePointer_Rqn, null);
-    B.TextStyle_Xj1 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_3zH, null, null, null);
-    B.Text_GFH = new A.Text("v0.1.94", null, B.TextStyle_Xj1, null, null, null, null, null, null, null);
-    B.Positioned_WXa = new A.Positioned(null, 16, 16, null, null, null, B.Text_GFH, null);
     B.Placeholder_null = new A.Placeholder(null);
     B.Positioned_bkT = new A.Positioned(0, 0, 0, 0, null, null, B.Placeholder_null, null);
+    B.TextStyle_Xj1 = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_3zH, null, null, null);
+    B.Text_UQ8 = new A.Text("v0.1.95", null, B.TextStyle_Xj1, null, null, null, null, null, null, null);
+    B.Positioned_gvA = new A.Positioned(null, 16, 16, null, null, null, B.Text_UQ8, null);
     B.BgOverlay_null = new A.BgOverlay(null);
     B.IgnorePointer_true_BgOverlay_null_null = new A.IgnorePointer(true, B.BgOverlay_null, null);
     B.Positioned_oTC = new A.Positioned(0, 0, 0, 0, null, null, B.IgnorePointer_true_BgOverlay_null_null, null);
@@ -294128,6 +294125,8 @@
     B.TextStyle_ZzL = new A.TextStyle(true, B.MaterialColor_nI1, null, null, null, null, null, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_LIg = new A.Text("Leave", null, B.TextStyle_ZzL, null, null, null, null, null, null, null);
     B.Text_M4N = new A.Text("Watch", null, B.TextStyle_yzP, null, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_M5u = new A.Text("v0.1.95", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_MYK = new A.Text("PvP Arena", null, B.TextStyle_78S, null, null, null, null, null, null, null);
     B.TextStyle_FHf = new A.TextStyle(true, B.Color_kye, null, null, null, null, 17, B.FontWeight_8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_MtE = new A.Text("Altar Substat Chances", null, B.TextStyle_FHf, null, null, null, null, null, null, null);
@@ -294171,8 +294170,6 @@
     B.Text_ie3 = new A.Text("Kick", null, B.TextStyle_ZzL, null, null, null, null, null, null, null);
     B.TextStyle_RUn = new A.TextStyle(true, B.Color_UdU, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_kOS = new A.Text("Cancel", null, B.TextStyle_RUn, null, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_lA5 = new A.Text("v0.1.94", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_lbD = new A.Text("VS", null, B.TextStyle_pg2, null, null, null, null, null, null, null);
     B.TextStyle_LE6 = new A.TextStyle(true, B.Color_mwC, null, null, null, null, 13, null, null, null, null, null, 1.6, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_lzH = new A.Text("Thank you for testing this prototype.\nYour feedback helps shape the game!", null, B.TextStyle_LE6, B.TextAlign_2, null, null, null, null, null, null);
