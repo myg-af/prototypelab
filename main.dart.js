@@ -231492,35 +231492,35 @@
         base = A.ThemeData_ThemeData(_null, _null, this._box_0.fontFamily, _null),
         t1 = base.textTheme,
         t2 = t1.displayLarge;
-      t2 = t2 == null ? _null : t2.merge$1(B.TextStyle_hPg);
+      t2 = t2 == null ? _null : t2.merge$1(B.TextStyle_1He);
       t3 = t1.displayMedium;
-      t3 = t3 == null ? _null : t3.merge$1(B.TextStyle_hPg);
+      t3 = t3 == null ? _null : t3.merge$1(B.TextStyle_1He);
       t4 = t1.displaySmall;
-      t4 = t4 == null ? _null : t4.merge$1(B.TextStyle_hPg);
+      t4 = t4 == null ? _null : t4.merge$1(B.TextStyle_1He);
       t5 = t1.headlineLarge;
-      t5 = t5 == null ? _null : t5.merge$1(B.TextStyle_hPg);
+      t5 = t5 == null ? _null : t5.merge$1(B.TextStyle_1He);
       t6 = t1.headlineMedium;
-      t6 = t6 == null ? _null : t6.merge$1(B.TextStyle_hPg);
+      t6 = t6 == null ? _null : t6.merge$1(B.TextStyle_1He);
       t7 = t1.headlineSmall;
-      t7 = t7 == null ? _null : t7.merge$1(B.TextStyle_hPg);
+      t7 = t7 == null ? _null : t7.merge$1(B.TextStyle_1He);
       t8 = t1.titleLarge;
-      t8 = t8 == null ? _null : t8.merge$1(B.TextStyle_hPg);
+      t8 = t8 == null ? _null : t8.merge$1(B.TextStyle_1He);
       t9 = t1.titleMedium;
-      t9 = t9 == null ? _null : t9.merge$1(B.TextStyle_hPg);
+      t9 = t9 == null ? _null : t9.merge$1(B.TextStyle_1He);
       t10 = t1.titleSmall;
-      t10 = t10 == null ? _null : t10.merge$1(B.TextStyle_hPg);
+      t10 = t10 == null ? _null : t10.merge$1(B.TextStyle_1He);
       t11 = t1.bodyLarge;
-      t11 = t11 == null ? _null : t11.merge$1(B.TextStyle_hPg);
+      t11 = t11 == null ? _null : t11.merge$1(B.TextStyle_1He);
       t12 = t1.bodyMedium;
-      t12 = t12 == null ? _null : t12.merge$1(B.TextStyle_hPg);
+      t12 = t12 == null ? _null : t12.merge$1(B.TextStyle_1He);
       t13 = t1.bodySmall;
-      t13 = t13 == null ? _null : t13.merge$1(B.TextStyle_hPg);
+      t13 = t13 == null ? _null : t13.merge$1(B.TextStyle_1He);
       t14 = t1.labelLarge;
-      t14 = t14 == null ? _null : t14.merge$1(B.TextStyle_hPg);
+      t14 = t14 == null ? _null : t14.merge$1(B.TextStyle_1He);
       t15 = t1.labelMedium;
-      t15 = t15 == null ? _null : t15.merge$1(B.TextStyle_hPg);
+      t15 = t15 == null ? _null : t15.merge$1(B.TextStyle_1He);
       t16 = t1.labelSmall;
-      return base.copyWith$1$textTheme(t1.copyWith$15$bodyLarge$bodyMedium$bodySmall$displayLarge$displayMedium$displaySmall$headlineLarge$headlineMedium$headlineSmall$labelLarge$labelMedium$labelSmall$titleLarge$titleMedium$titleSmall(t11, t12, t13, t2, t3, t4, t5, t6, t7, t14, t15, t16 == null ? _null : t16.merge$1(B.TextStyle_hPg), t8, t9, t10));
+      return base.copyWith$1$textTheme(t1.copyWith$15$bodyLarge$bodyMedium$bodySmall$displayLarge$displayMedium$displaySmall$headlineLarge$headlineMedium$headlineSmall$labelLarge$labelMedium$labelSmall$titleLarge$titleMedium$titleSmall(t11, t12, t13, t2, t3, t4, t5, t6, t7, t14, t15, t16 == null ? _null : t16.merge$1(B.TextStyle_1He), t8, t9, t10));
     },
     $signature: 248
   };
@@ -231533,7 +231533,7 @@
       A.assertHelper(t2 >= 0);
       t2 = t1.copyWith$1$textScaler(new A._LinearTextScaler(t2));
       child.toString;
-      return A.MediaQuery$(A.DefaultTextStyle_merge(child, B.TextStyle_hPg), t2);
+      return A.MediaQuery$(A.DefaultTextStyle_merge(child, B.TextStyle_1He), t2);
     },
     $signature: 213
   };
@@ -233484,7 +233484,7 @@
       t1 = A.BoxDecoration$(A.Border_Border$all(B.Color_1BD, 1), t1, A._setArrayType([A.BoxShadow$(20, B.BlurStyle_0, B.Color_6oa, B.Offset_0_0, 2)], type$.JSArray_BoxShadow), B.Color_398, _null, _null, B.BoxShape_0);
       t2 = won ? "VICTORY" : "DEFEAT";
       t3 = won ? B.Color_kye : B.Color_PxA;
-      t4 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+      t4 = A.List_List$_of(B.List_bjm, type$.Shadow);
       t5 = won ? B.Color_kye : B.Color_PxA;
       t5 = A.Color$fromARGB(140, t5.toARGB32$0() >>> 16 & 255, t5.toARGB32$0() >>> 8 & 255, t5.toARGB32$0() & 255);
       t4.push(new A.Shadow(t5, B.Offset_0_0, 24));
@@ -235641,7 +235641,7 @@
         t1 = A.Image$asset("lib/img/splash.png", B.BoxFit_2, 1 / 0, 1 / 0);
         t2 = A.BorderRadius$circular(3);
         t3 = _this._splashProgress;
-        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_nAi], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
+        return A.Scaffold$(B.Color_vnR, A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([t1, A.Positioned$(48, A.ClipRRect$(t2, A.LinearProgressIndicator$(B.Color_wst.withValues$1$alpha(0.25), _null, 4, t3, B.AlwaysStoppedAnimation_2aH)), _null, _null, 32, 32, _null, _null), B.Positioned_5hf], type$.JSArray_Widget), B.Clip_1, B.StackFit_0));
       }
       t2 = _this._equippedSlots;
       t4 = _this._relicSlots;
@@ -238916,7 +238916,7 @@
       t2 = A.BoxDecoration$(A.Border_Border$all(B.Color_1BD, 1), t2, A._setArrayType([A.BoxShadow$(20, B.BlurStyle_0, B.Color_6oa, B.Offset_0_0, 2)], type$.JSArray_BoxShadow), B.Color_398, _null, _null, B.BoxShape_0);
       t3 = won ? "VICTORY" : "DEFEAT";
       t4 = won ? B.Color_kye : B.Color_PxA;
-      t5 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+      t5 = A.List_List$_of(B.List_bjm, type$.Shadow);
       t6 = won ? B.Color_kye : B.Color_PxA;
       t6 = A.Color$fromARGB(140, t6.toARGB32$0() >>> 16 & 255, t6.toARGB32$0() >>> 8 & 255, t6.toARGB32$0() & 255);
       t5.push(new A.Shadow(t6, B.Offset_0_0, 24));
@@ -240315,7 +240315,7 @@
           t3 = B.Color_7Fu;
         else
           t3 = t3 === "clan2" ? B.Color_tM7 : B.Color_kye;
-        t4 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+        t4 = A.List_List$_of(B.List_bjm, type$.Shadow);
         t7 = _this._war_lane_combat_screen$_winner;
         if (t7 === "clan1")
           t7 = B.Color_7Fu;
@@ -242499,7 +242499,7 @@
       t5 = A.BorderRadius$circular(t5);
       t4 = _this.verticalPadding;
       t6 = _this.horizontalPadding;
-      return A.SizedBox$(A.Material$(B.Duration_200000, true, _null, A.Ink$(A.InkWell$(false, t5, true, new A.Padding(new A.EdgeInsets(t6, t4, t6, t4), A.Center$(A.DefaultTextStyle_merge(_this.child, A.TextStyle$(_null, _null, t2 ? B.Color_wst : B.Color_UdU, _null, _null, _null, _null, _null, _null, _null, _null, 15, _null, _null, B.FontWeight_8, _null, _null, true, _null, _null, _null, _null, _null, B.List_Vwc, _null, _null)), _null, _null), _null), _null, true, _null, B.Color_kAU, _null, _null, _null, _null, t1, _null, B.Color_pAC, _null, _null), t3), B.Clip_0, B.Color_Edl, 0, _null, _null, _null, _null, _null, B.MaterialType_0), _null, _this.width);
+      return A.SizedBox$(A.Material$(B.Duration_200000, true, _null, A.Ink$(A.InkWell$(false, t5, true, new A.Padding(new A.EdgeInsets(t6, t4, t6, t4), A.Center$(A.DefaultTextStyle_merge(_this.child, A.TextStyle$(_null, _null, t2 ? B.Color_wst : B.Color_UdU, _null, _null, _null, _null, _null, _null, _null, _null, 15, _null, _null, B.FontWeight_8, _null, _null, true, _null, _null, _null, _null, _null, B.List_bjm, _null, _null)), _null, _null), _null), _null, true, _null, B.Color_kAU, _null, _null, _null, _null, t1, _null, B.Color_pAC, _null, _null), t3), B.Clip_0, B.Color_Edl, 0, _null, _null, _null, _null, _null, B.MaterialType_0), _null, _this.width);
     }
   };
   A.BgStyle.prototype = {
@@ -243273,7 +243273,7 @@
       t2 = A.Row$(A._setArrayType([A.Text$("[" + h + ":" + m + "]", _null, _null, _null, _null, B.TextStyle_9M4, _null, _null), B.Spacer_null, A.GestureDetector$(_null, A.Container$(_null, B.Icon_xMM, B.Clip_0, _null, B.BoxDecoration_lZB, 28, _null, _null, 28), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._BattleCard_build_launchReplay(p1map, p2map, t2, context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
       t5 = A.Expanded$(A.GestureDetector$(_null, A.Row$(A._setArrayType([A.ClipOval$(new A.ColorFiltered(new A.EngineColorFilter(A.Color$fromARGB(80, p1Color.toARGB32$0() >>> 16 & 255, p1Color.toARGB32$0() >>> 8 & 255, p1Color.toARGB32$0() & 255), B.BlendMode_9, _null, B.ColorFilterType_0), A.Image$asset(A.kAvatarPath(p1Avatar), B.BoxFit_2, 44, 44), _null)), B.SizedBox_8_null_null_null, A.Column$(A._setArrayType([A.Text$(p1name, _null, B.TextOverflow_2, _null, _null, A.TextStyle$(_null, _null, p1Color, _null, _null, _null, _null, _null, _null, _null, _null, 12, _null, _null, B.FontWeight_6, _null, _null, true, _null, _null, _null, _null, _null, _null, _null, _null), _null, _null), A.Text$(A.fmtNumber(p1pow), _null, _null, _null, _null, A.TextStyle$(_null, _null, A.Color$fromARGB(200, p1Color.toARGB32$0() >>> 16 & 255, p1Color.toARGB32$0() >>> 8 & 255, p1Color.toARGB32$0() & 255), _null, _null, _null, _null, _null, _null, _null, _null, 20, _null, _null, _null, _null, _null, true, _null, _null, _null, _null, _null, _null, _null, _null), _null, _null)], t4), B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_0, B.VerticalDirection_1)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_2, B.MainAxisSize_1, 0), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._BattleCard_build_closure(t3, p1name), _null, _null, _null, _null, _null, _null), 1);
       t6 = A.Color$fromARGB(180, B.Color_wst.toARGB32$0() >>> 16 & 255, B.Color_wst.toARGB32$0() >>> 8 & 255, B.Color_wst.toARGB32$0() & 255);
-      t7 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+      t7 = A.List_List$_of(B.List_bjm, type$.Shadow);
       t8 = A.Color$fromARGB(120, B.Color_kye.toARGB32$0() >>> 16 & 255, B.Color_kye.toARGB32$0() >>> 8 & 255, B.Color_kye.toARGB32$0() & 255);
       t7.push(new A.Shadow(t8, B.Offset_0_0, 12));
       return new A.Padding(B.EdgeInsets_0_4_0_4, A.Container$(_null, A.Column$(A._setArrayType([t2, B.SizedBox_null_4_null_null, A.Row$(A._setArrayType([t5, new A.Padding(B.EdgeInsets_4_0_4_0, A.Text$("VS", _null, _null, _null, _null, A.TextStyle$(_null, _null, t6, _null, _null, _null, _null, _null, _null, _null, _null, 32, _null, _null, B.FontWeight_8, _null, _null, true, _null, 2, _null, _null, _null, t7, _null, _null), _null, _null), _null), A.Expanded$(A.GestureDetector$(_null, A.Row$(A._setArrayType([A.Column$(A._setArrayType([A.Text$(p2name, _null, B.TextOverflow_2, _null, _null, A.TextStyle$(_null, _null, p2Color, _null, _null, _null, _null, _null, _null, _null, _null, 12, _null, _null, B.FontWeight_6, _null, _null, true, _null, _null, _null, _null, _null, _null, _null, _null), _null, _null), A.Text$(A.fmtNumber(p2pow), _null, _null, _null, _null, A.TextStyle$(_null, _null, A.Color$fromARGB(200, p2Color.toARGB32$0() >>> 16 & 255, p2Color.toARGB32$0() >>> 8 & 255, p2Color.toARGB32$0() & 255), _null, _null, _null, _null, _null, _null, _null, _null, 20, _null, _null, _null, _null, _null, true, _null, _null, _null, _null, _null, _null, _null, _null), _null, _null)], t4), B.CrossAxisAlignment_1, B.MainAxisAlignment_0, B.MainAxisSize_0, B.VerticalDirection_1), B.SizedBox_8_null_null_null, A.ClipOval$(new A.ColorFiltered(new A.EngineColorFilter(A.Color$fromARGB(80, p2Color.toARGB32$0() >>> 16 & 255, p2Color.toARGB32$0() >>> 8 & 255, p2Color.toARGB32$0() & 255), B.BlendMode_9, _null, B.ColorFilterType_0), A.Image$asset(A.kAvatarPath(p2Avatar), B.BoxFit_2, 44, 44), _null))], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_2, B.MainAxisSize_1, 0), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._BattleCard_build_closure0(t3, p2name), _null, _null, _null, _null, _null, _null), 1)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), B.Clip_0, _null, t1, _null, _null, B.EdgeInsets_10_6_10_10, _null), _null);
@@ -243895,7 +243895,7 @@
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data.copyWith$1$textScaler(B._LinearTextScaler_1);
       t3 = A.BorderRadius$circular(10);
       t4 = type$.JSArray_Widget;
-      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_ZQR, B.SizedBox_8_null_null_null, B.Text_AFX, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
+      t5 = A.Row$(A._setArrayType([B.Icon_Rvj, B.SizedBox_6_null_null_null, B.Text_ZQR, B.SizedBox_8_null_null_null, B.Text_7Dl, B.Spacer_null, A.GestureDetector$(_null, B.Icon_2ow, B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._DevConsoleState_build_closure(context), _null, _null, _null, _null, _null, _null)], t4), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0);
       t6 = type$.MappedListIterable__Cmd_GestureDetector;
       t6 = A.List_List$_of(new A.MappedListIterable(B.List_TWe, type$.GestureDetector_Function__Cmd._as(new A._DevConsoleState_build_closure0(_this)), t6), t6._eval$1("ListIterable.E"));
       t6 = A.Expanded$(A.Scrollbar$(A.SingleChildScrollView$(A.Column$(t6, B.CrossAxisAlignment_0, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1), _null, B.Axis_1), _null, true), 1);
@@ -247125,7 +247125,7 @@
     build$1(context) {
       var _this = this, _null = null,
         t1 = type$.JSArray_Widget;
-      return A.GestureDetector$(_null, A.SizedBox$(A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([A.Positioned$(_null, A.ClipOval$(A.Image$asset(A.kAvatarPath(_this.avatarIndex), B.BoxFit_2, 46, 46)), _null, _null, 7, _null, 43, _null), A.Positioned$fill(0, A.Image$asset("lib/img/player_card_bg.png", B.BoxFit_0, _null, _null)), A.Positioned$(42, A.Row$(A._setArrayType([new A.Flexible(1, B.FlexFit_1, A.Text$(_this.name, _null, B.TextOverflow_2, _null, _null, B.TextStyle_xeF, _null, _null), _null), A.Row$(A._setArrayType([B.Icon_WZs, B.SizedBox_2_null_null_null, A.Text$(A.fmtNumber(_this.power), _null, _null, _null, _null, B.TextStyle_1TB, _null, _null)], t1), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_0, 0)], t1), B.CrossAxisAlignment_2, B.MainAxisAlignment_3, B.MainAxisSize_1, 0), _null, _null, 60, 20, 38, _null)], t1), B.Clip_1, B.StackFit_0), 132, 202), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A.PlayerCard_build_closure(_this, context), _null, _null, _null, _null, _null, _null);
+      return A.GestureDetector$(_null, A.SizedBox$(A.Stack$(B.AlignmentDirectional_m1_m1, A._setArrayType([A.Positioned$(_null, A.ClipOval$(A.Image$asset(A.kAvatarPath(_this.avatarIndex), B.BoxFit_2, 46, 46)), _null, _null, 7, _null, 43, _null), A.Positioned$fill(0, A.Image$asset("lib/img/player_card_bg.png", B.BoxFit_0, _null, _null)), A.Positioned$(42, A.Row$(A._setArrayType([new A.Flexible(1, B.FlexFit_1, A.Text$(_this.name, _null, B.TextOverflow_2, _null, _null, B.TextStyle_Y0j, _null, _null), _null), A.Row$(A._setArrayType([B.Icon_3Xr, B.SizedBox_2_null_null_null, A.Text$(A.fmtNumber(_this.power), _null, _null, _null, _null, B.TextStyle_fjD, _null, _null)], t1), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_0, 0)], t1), B.CrossAxisAlignment_2, B.MainAxisAlignment_3, B.MainAxisSize_1, 0), _null, _null, 60, 20, 38, _null)], t1), B.Clip_1, B.StackFit_0), 132, 202), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A.PlayerCard_build_closure(_this, context), _null, _null, _null, _null, _null, _null);
     }
   };
   A.PlayerCard_build_closure.prototype = {
@@ -247237,7 +247237,7 @@
       t6.strokeJoin = B.StrokeJoin_1;
       t6._colorValue = B.Color_PW1.get$value(0);
       t6 = A.Text$(t1, _null, B.TextOverflow_3, _null, false, A.TextStyle$(_null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, t2, _null, _null, B.FontWeight_8, t6, _null, true, _null, _null, _null, _null, _null, _null, _null, _null), _null, _null);
-      t7 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+      t7 = A.List_List$_of(B.List_bjm, type$.Shadow);
       t7.push(new A.Shadow(_this.glow, B.Offset_0_0, 14));
       return A.Opacity$(A.Transform$translate(A.Transform$scale(A.Stack$(B.Alignment_0_0, A._setArrayType([t6, A.Text$(t1, _null, B.TextOverflow_3, _null, false, A.TextStyle$(_null, _null, _this.color, _null, _null, _null, _null, _null, _null, _null, _null, t2, _null, _null, B.FontWeight_8, _null, _null, true, _null, 0.5, _null, _null, _null, t7, _null, _null), _null, _null)], type$.JSArray_Widget), B.Clip_1, B.StackFit_0), t3), t5), t4);
     },
@@ -247320,7 +247320,7 @@
       t1 === $ && A.throwLateFieldNI("_scale");
       t3 = t3._as(t1.parent);
       t3 = t1._evaluatable.transform$1(0, t3.get$value(t3));
-      t1 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+      t1 = A.List_List$_of(B.List_bjm, type$.Shadow);
       t1.push(new A.Shadow(B.Color_w2u, B.Offset_0_0, 18));
       t1.push(new A.Shadow(B.Color_ukC, B.Offset_0_0, 6));
       return A.Opacity$(A.Transform$translate(A.Transform$scale(A.Text$("BLOCKED", _null, _null, _null, _null, A.TextStyle$(_null, _null, B.Color_ukC, _null, _null, _null, _null, _null, _null, _null, _null, 26, _null, _null, B.FontWeight_6, _null, _null, true, _null, 3, _null, _null, _null, t1, _null, _null), _null, _null), t3), new A.Offset(0, t5)), t4);
@@ -247395,7 +247395,7 @@
       t5.strokeJoin = B.StrokeJoin_1;
       t5._colorValue = B.Color_vnR.get$value(0);
       t5 = A.Text$(t4, _null, _null, _null, _null, A.TextStyle$(_null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, 28, _null, _null, B.FontWeight_8, t5, _null, true, _null, _null, _null, _null, _null, _null, _null, _null), _null, _null);
-      t6 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+      t6 = A.List_List$_of(B.List_bjm, type$.Shadow);
       t7 = A.Color$fromARGB(200, t1.toARGB32$0() >>> 16 & 255, t1.toARGB32$0() >>> 8 & 255, t1.toARGB32$0() & 255);
       t6.push(new A.Shadow(t7, B.Offset_0_0, 12));
       t7 = type$.JSArray_Widget;
@@ -250279,7 +250279,7 @@
         label = "TIE";
         color = B.Color_kye;
       }
-      t1 = A.List_List$_of(B.List_Vwc, type$.Shadow);
+      t1 = A.List_List$_of(B.List_bjm, type$.Shadow);
       t2 = A.Color$fromARGB(120, color.toARGB32$0() >>> 16 & 255, color.toARGB32$0() >>> 8 & 255, color.toARGB32$0() & 255);
       t1.push(new A.Shadow(t2, B.Offset_0_0, 16));
       return A.Column$(A._setArrayType([B.Text_oSl, B.SizedBox_null_6_null_null, A.Text$(label, _null, _null, _null, _null, A.TextStyle$(_null, _null, color, _null, _null, _null, _null, _null, _null, _null, _null, 28, _null, _null, B.FontWeight_6, _null, _null, true, _null, 2, _null, _null, _null, t1, _null, _null), _null, _null), B.SizedBox_null_4_null_null, A.Text$("" + myScore + " - " + enemyScore, _null, _null, _null, _null, A.TextStyle$(_null, _null, A.Color$fromARGB(200, color.toARGB32$0() >>> 16 & 255, color.toARGB32$0() >>> 8 & 255, color.toARGB32$0() & 255), _null, _null, _null, _null, _null, _null, _null, _null, 18, _null, _null, B.FontWeight_6, _null, _null, true, _null, _null, _null, _null, _null, _null, _null, _null), _null, _null)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, B.VerticalDirection_1);
@@ -289786,6 +289786,24 @@
     B.Icon_1WS = new A.Icon(B.IconData_60981_MaterialIcons_false, 18, B.Color_UdU, null, null, null);
     B.Icon_2ow = new A.Icon(B.IconData_57706_MaterialIcons_false, 16, B.Color_kd7, null, null, null);
     B.IconData_58873_MaterialIcons_false = new A.IconData(58873, "MaterialIcons", false);
+    B.Offset_m1_0 = new A.Offset(-1, 0);
+    B.Shadow_aVX = new A.Shadow(B.Color_4Ao, B.Offset_m1_0, 0);
+    B.Offset_1_0 = new A.Offset(1, 0);
+    B.Shadow_gOh = new A.Shadow(B.Color_4Ao, B.Offset_1_0, 0);
+    B.Offset_0_m1 = new A.Offset(0, -1);
+    B.Shadow_Dif = new A.Shadow(B.Color_4Ao, B.Offset_0_m1, 0);
+    B.Offset_0_1 = new A.Offset(0, 1);
+    B.Shadow_6Yx = new A.Shadow(B.Color_4Ao, B.Offset_0_1, 0);
+    B.Offset_m1_m1 = new A.Offset(-1, -1);
+    B.Shadow_ErP = new A.Shadow(B.Color_4Ao, B.Offset_m1_m1, 0);
+    B.Offset_1_m1 = new A.Offset(1, -1);
+    B.Shadow_jPP = new A.Shadow(B.Color_4Ao, B.Offset_1_m1, 0);
+    B.Offset_m1_1 = new A.Offset(-1, 1);
+    B.Shadow_NBG = new A.Shadow(B.Color_4Ao, B.Offset_m1_1, 0);
+    B.Offset_1_1 = new A.Offset(1, 1);
+    B.Shadow_sgK = new A.Shadow(B.Color_4Ao, B.Offset_1_1, 0);
+    B.List_bjm = makeConstList([B.Shadow_aVX, B.Shadow_gOh, B.Shadow_Dif, B.Shadow_6Yx, B.Shadow_ErP, B.Shadow_jPP, B.Shadow_NBG, B.Shadow_sgK], type$.JSArray_Shadow);
+    B.Icon_3Xr = new A.Icon(B.IconData_58873_MaterialIcons_false, 11, B.Color_kye, B.List_bjm, null, null);
     B.Icon_3gQ = new A.Icon(B.IconData_58873_MaterialIcons_false, 13, B.Color_kye, null, null, null);
     B.IconData_57548_MaterialIcons_false = new A.IconData(57548, "MaterialIcons", false);
     B.Icon_5JW = new A.Icon(B.IconData_57548_MaterialIcons_false, 16, B.Color_kye, null, null, null);
@@ -289826,24 +289844,6 @@
     B.IconData_57882_MaterialIcons_false = new A.IconData(57882, "MaterialIcons", false);
     B.Icon_VqU = new A.Icon(B.IconData_57882_MaterialIcons_false, 13, B.Color_UdU, null, null, null);
     B.Icon_Vz4 = new A.Icon(B.IconData_58873_MaterialIcons_false, 10, B.Color_kye, null, null, null);
-    B.Offset_m1_0 = new A.Offset(-1, 0);
-    B.Shadow_1NH = new A.Shadow(B.Color_vnR, B.Offset_m1_0, 0);
-    B.Offset_1_0 = new A.Offset(1, 0);
-    B.Shadow_U0A = new A.Shadow(B.Color_vnR, B.Offset_1_0, 0);
-    B.Offset_0_m1 = new A.Offset(0, -1);
-    B.Shadow_Uyn = new A.Shadow(B.Color_vnR, B.Offset_0_m1, 0);
-    B.Offset_0_1 = new A.Offset(0, 1);
-    B.Shadow_sNF = new A.Shadow(B.Color_vnR, B.Offset_0_1, 0);
-    B.Offset_m1_m1 = new A.Offset(-1, -1);
-    B.Shadow_pdg = new A.Shadow(B.Color_vnR, B.Offset_m1_m1, 0);
-    B.Offset_1_m1 = new A.Offset(1, -1);
-    B.Shadow_akO = new A.Shadow(B.Color_vnR, B.Offset_1_m1, 0);
-    B.Offset_m1_1 = new A.Offset(-1, 1);
-    B.Shadow_yuY = new A.Shadow(B.Color_vnR, B.Offset_m1_1, 0);
-    B.Offset_1_1 = new A.Offset(1, 1);
-    B.Shadow_ZVi = new A.Shadow(B.Color_vnR, B.Offset_1_1, 0);
-    B.List_Vwc = makeConstList([B.Shadow_1NH, B.Shadow_U0A, B.Shadow_Uyn, B.Shadow_sNF, B.Shadow_pdg, B.Shadow_akO, B.Shadow_yuY, B.Shadow_ZVi], type$.JSArray_Shadow);
-    B.Icon_WZs = new A.Icon(B.IconData_58873_MaterialIcons_false, 11, B.Color_kye, B.List_Vwc, null, null);
     B.Icon_YPO = new A.Icon(B.IconData_59011_MaterialIcons_false, 16, B.Color_kye, null, null, null);
     B.Icon_Z3t = new A.Icon(B.IconData_61659_MaterialIcons_false, 20, B.Color_kAU, null, null, null);
     B.Icon_bjo = new A.Icon(B.IconData_61870_MaterialIcons_false, 16, B.Color_kye, null, null, null);
@@ -291525,14 +291525,14 @@
     B.PointerSignalKind_3 = new A.PointerSignalKind(3, "scale");
     B.PointerSignalKind_4 = new A.PointerSignalKind(4, "unknown");
     B.PopupMenuThemeData_sU5 = new A.PopupMenuThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.TextStyle_atP = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_bjm, null, null, null);
+    B.Text_azC = new A.Text("v0.1.92", null, B.TextStyle_atP, null, null, null, null, null, null, null);
+    B.Positioned_5hf = new A.Positioned(null, 16, 16, null, null, null, B.Text_azC, null);
     B.DecoratedBox_ahe = new A.DecoratedBox(B.BoxDecoration_wWU, B.DecorationPosition_0, null, null);
     B.IgnorePointer_Rqn = new A.IgnorePointer(true, B.DecoratedBox_ahe, null);
     B.Positioned_FGc = new A.Positioned(0, 0, 0, 0, null, null, B.IgnorePointer_Rqn, null);
     B.Placeholder_null = new A.Placeholder(null);
     B.Positioned_bkT = new A.Positioned(0, 0, 0, 0, null, null, B.Placeholder_null, null);
-    B.TextStyle_Cto = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Vwc, null, null, null);
-    B.Text_X63 = new A.Text("v0.1.91", null, B.TextStyle_Cto, null, null, null, null, null, null, null);
-    B.Positioned_nAi = new A.Positioned(null, 16, 16, null, null, null, B.Text_X63, null);
     B.BgOverlay_null = new A.BgOverlay(null);
     B.IgnorePointer_true_BgOverlay_null_null = new A.IgnorePointer(true, B.BgOverlay_null, null);
     B.Positioned_oTC = new A.Positioned(0, 0, 0, 0, null, null, B.IgnorePointer_true_BgOverlay_null_null, null);
@@ -292057,7 +292057,7 @@
     B.TextSpan_tx6 = new A.TextSpan("\u2702", null, B.C__DeferringMouseCursor, null, B.TextStyle_9Pf);
     B.TextStyle_0KU = new A.TextStyle(true, null, null, null, null, null, 10, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_1CN = new A.TextStyle(true, B.Color_wst, null, null, null, null, 11, B.FontWeight_8, null, 0.5, null, null, 1.3, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.TextStyle_1TB = new A.TextStyle(true, B.Color_kye, null, null, null, null, 11, B.FontWeight_8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Vwc, null, null, null);
+    B.TextStyle_1He = new A.TextStyle(true, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_bjm, null, null, null);
     B.TextStyle_1Yp = new A.TextStyle(true, B.Color_kye, null, null, null, null, 14, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Color_Nv0 = new A.Color(1, 0.8313725490196079, 0.6588235294117647, 0.2627450980392157, B.ColorSpace_0);
     B.TextStyle_1xi = new A.TextStyle(true, B.Color_Nv0, null, null, null, null, 12, B.FontWeight_8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
@@ -292113,6 +292113,7 @@
     B.TextStyle_Wtd = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_XhJ = new A.TextStyle(true, null, null, null, null, null, 10, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_XpI = new A.TextStyle(true, B.Color_L7B, null, null, null, null, 20, B.FontWeight_8, null, 2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.TextStyle_Y0j = new A.TextStyle(true, B.Color_wst, null, null, null, null, 14, B.FontWeight_6, null, 0.8, null, null, null, null, null, null, null, null, null, null, null, null, B.List_bjm, null, null, null);
     B.TextStyle_YfX = new A.TextStyle(true, B.Color_UdU, null, null, null, null, 12, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_Yz9 = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, "monospace", null, null, 10, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_ZyH0 = new A.TextStyle(true, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
@@ -292127,9 +292128,9 @@
     B.TextStyle_dXK = new A.TextStyle(false, B.CupertinoDynamicColor_b5s, null, "CupertinoSystemText", null, null, 17, null, null, -0.41, null, null, null, null, null, null, null, B.TextDecoration_0, null, null, null, null, null, null, null, null);
     B.TextStyle_dfQ = new A.TextStyle(true, B.Color_wst, null, null, null, null, 20, B.FontWeight_6, null, 2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_e0H = new A.TextStyle(true, B.Color_wst, null, null, null, null, 14, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.TextStyle_fjD = new A.TextStyle(true, B.Color_kye, null, null, null, null, 11, B.FontWeight_8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_bjm, null, null, null);
     B.TextStyle_fuS = new A.TextStyle(true, B.Color_kye, null, null, null, null, 10, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_fva = new A.TextStyle(true, B.Color_4Ao, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.TextStyle_hPg = new A.TextStyle(true, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Vwc, null, null, null);
     B.TextStyle_hUr = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_hUw = new A.TextStyle(true, B.Color_wst, null, null, null, null, 17, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_j3d = new A.TextStyle(true, B.Color_30J, null, "monospace", null, null, 9, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
@@ -292158,7 +292159,6 @@
     B.TextStyle_wSN = new A.TextStyle(true, B.Color_wst, null, null, null, null, 12, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_xDq = new A.TextStyle(true, B.Color_7Fu, null, null, null, null, 12, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_xYF = new A.TextStyle(true, B.Color_eDj, null, null, null, null, 8, B.FontWeight_6, null, 0.3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.TextStyle_xeF = new A.TextStyle(true, B.Color_wst, null, null, null, null, 14, B.FontWeight_6, null, 0.8, null, null, null, null, null, null, null, null, null, null, null, null, B.List_Vwc, null, null, null);
     B.TextStyle_yFz = new A.TextStyle(true, null, null, null, null, null, 12, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_yJE = new A.TextStyle(true, B.Color_UdU, null, null, null, null, 14, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_eKB = new A.TextStyle(false, null, null, null, null, null, 96, B.FontWeight_0, null, null, null, B.TextBaseline_1, null, null, null, null, null, null, null, null, null, "dense displayLarge 2018", null, null, null, null);
@@ -292481,13 +292481,13 @@
     B.Text_7C2 = new A.Text("Share", null, null, null, null, null, null, null, null, null);
     B.TextStyle_1Yp0 = new A.TextStyle(true, B.Color_kye, null, null, null, null, 14, B.FontWeight_6, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_7CI = new A.Text("Game Config", null, B.TextStyle_1Yp0, null, null, null, null, null, null, null);
+    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    B.Text_7Dl = new A.Text("v0.1.92", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.Text_7ao = new A.Text("Fight", null, null, null, null, null, null, null, null, null);
     B.Text_7do = new A.Text("Back", null, null, null, null, null, null, null, null, null);
     B.TextStyle_TlY = new A.TextStyle(true, B.Color_kye, null, null, null, null, 16, B.FontWeight_6, null, 0.5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_8gY = new A.Text("Keep current equipment?", null, B.TextStyle_TlY, null, null, null, null, null, null, null);
     B.Text_9Tl = new A.Text("Cost: ", null, B.TextStyle_uNC, null, null, null, null, null, null, null);
-    B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_AFX = new A.Text("v0.1.91", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.TextStyle_Xth = new A.TextStyle(true, null, null, null, null, null, 11, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_AOY = new A.Text("Enter", null, B.TextStyle_Xth, null, null, null, null, null, null, null);
     B.Text_Air = new A.Text("Choose avatar", null, B.TextStyle_KWa, null, null, null, null, null, null, null);
