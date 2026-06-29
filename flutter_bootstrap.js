@@ -37,8 +37,8 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"035316565ad77281a75305515e4682e6c4c6f7ca","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 _flutter.loader.load({
-  config: { hostElement: document.querySelector('#app') },
   serviceWorkerSettings: {
-    serviceWorkerVersion: "1893034272"
-  }
+    serviceWorkerVersion: "2908435892"
+  },
+  config: { hostElement: document.querySelector('#app') }
 });
