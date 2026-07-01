@@ -238073,12 +238073,12 @@
       A.debugCheckHasMediaQuery(context);
       t6 = A.InheritedModel_inheritFrom(context, _null, t1).data;
       t7 = A.BorderRadius$circular(8);
-      t11.push(A.Positioned$(_null, A.GestureDetector$(_null, A.Container$(_null, B.Icon_uCZ, B.Clip_0, _null, A.BoxDecoration$(A.Border_Border$all(B.Color_1BD, 1.5), t7, _null, B.Color_eCn, _null, _null, B.BoxShape_0), _null, _null, B.EdgeInsets_10_10_10_10, _null), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _this.get$_openSettings(), _null, _null, _null, _null, _null, _null), _null, _null, _null, 8, t6.padding.top + 6, _null));
+      t11.push(A.Positioned$(_null, A.GestureDetector$(_null, A.Container$(_null, B.Icon_uCZ, B.Clip_0, _null, A.BoxDecoration$(A.Border_Border$all(B.Color_1BD, 1.5), t7, _null, B.Color_eCn, _null, _null, B.BoxShape_0), _null, _null, B.EdgeInsets_10_10_10_10, _null), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _this.get$_openSettings(), _null, _null, _null, _null, _null, _null), _null, _null, _null, 8, t6.padding.top + 43, _null));
       A.debugCheckHasMediaQuery(context);
       t6 = A.InheritedModel_inheritFrom(context, _null, t1).data;
       t7 = A.BorderRadius$circular(6);
       t7 = A.BoxDecoration$(A.Border_Border$all(B.Color_1BD, 1.5), t7, _null, B.Color_eCn, _null, _null, B.BoxShape_0);
-      t11.push(A.Positioned$(_null, A.GestureDetector$(_null, A.Container$(_null, A.Icon$(_this._devConsoleActive ? B.IconData_59069_MaterialIcons_false : B.IconData_59070_MaterialIcons_false, B.Color_wst, _null, _null, 18), B.Clip_0, _null, t7, _null, _null, B.EdgeInsets_6_6_6_6, _null), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._GameScreenState_build_closure14(_this, context), _null, _null, _null, _null, _null, _null), _null, _null, _null, 8, t6.padding.top + 80, _null));
+      t11.push(A.Positioned$(_null, A.GestureDetector$(_null, A.Container$(_null, A.Icon$(_this._devConsoleActive ? B.IconData_59069_MaterialIcons_false : B.IconData_59070_MaterialIcons_false, B.Color_wst, _null, _null, 18), B.Clip_0, _null, t7, _null, _null, B.EdgeInsets_6_6_6_6, _null), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A._GameScreenState_build_closure14(_this, context), _null, _null, _null, _null, _null, _null), _null, _null, _null, 8, t6.padding.top + 95, _null));
       A.debugCheckHasMediaQuery(context);
       t1 = A.InheritedModel_inheritFrom(context, _null, t1).data;
       t6 = A.BorderRadius$circular(14);
@@ -294623,7 +294623,7 @@
     B.IgnorePointer_Rqn = new A.IgnorePointer(true, B.DecoratedBox_ahe, null);
     B.Positioned_FGc = new A.Positioned(0, 0, 0, 0, null, null, B.IgnorePointer_Rqn, null);
     B.TextStyle_30T = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_lBK, null, null, null);
-    B.Text_mdx = new A.Text("v0.1.104", null, B.TextStyle_30T, null, null, null, null, null, null, null);
+    B.Text_mdx = new A.Text("v0.1.105", null, B.TextStyle_30T, null, null, null, null, null, null, null);
     B.Positioned_Zsn = new A.Positioned(null, 16, 16, null, null, null, B.Text_mdx, null);
     B.Placeholder_null = new A.Placeholder(null);
     B.Positioned_bkT = new A.Positioned(0, 0, 0, 0, null, null, B.Placeholder_null, null);
@@ -295625,7 +295625,7 @@
     B.Text_hLf = new A.Text("Spend gems to get other currencies", null, B.TextStyle_4Ra, null, null, null, null, null, null, null);
     B.Text_iBR = new A.Text("ARCHER", null, B.TextStyle_WSE, null, null, null, null, null, null, null);
     B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_jS7 = new A.Text("v0.1.104", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
+    B.Text_jS7 = new A.Text("v0.1.105", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.TextStyle_RUn = new A.TextStyle(true, B.Color_UdU, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_kOS = new A.Text("Cancel", null, B.TextStyle_RUn, null, null, null, null, null, null, null);
     B.Text_kXP = new A.Text("Create Clan", null, B.TextStyle_3LD, null, null, null, null, null, null, null);
