@@ -245666,7 +245666,7 @@
         t3 = t2.playerClanName == null,
         t4 = !t3 ? new A._ChatPanelState__buildHeader_closure(_this) : _null;
       t2 = t2.onClose;
-      return A.Container$(_null, A.Row$(A._setArrayType([new A._TabButton("Global", t1 === 0, false, new A._ChatPanelState__buildHeader_closure0(_this), _null), B.SizedBox_8_null_null_null, new A._TabButton("Clan", t1 === 1, t3, t4, _null), B.Spacer_null, A.GestureDetector$(_null, A.Container$(_null, A.Container$(_null, B.Center_iLd, B.Clip_0, _null, B.BoxDecoration_iE5, _null, _null, _null, _null), B.Clip_0, _null, B.BoxDecoration_Ggl, 32, _null, B.EdgeInsets_ZAQ, 32), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, t2, _null, _null, _null, _null, _null, _null)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), B.Clip_0, _null, B.BoxDecoration_jfW, _null, _null, B.EdgeInsets_12_10_8_8, _null);
+      return A.Container$(_null, A.Row$(A._setArrayType([new A._TabButton("Global", t1 === 0, false, new A._ChatPanelState__buildHeader_closure0(_this), _null), B.SizedBox_8_null_null_null, new A._TabButton("Clan", t1 === 1, t3, t4, _null), B.Spacer_null, A.GestureDetector$(_null, A.Container$(_null, A.Container$(_null, B.Center_iLd, B.Clip_0, _null, B.BoxDecoration_iE5, _null, _null, _null, _null), B.Clip_0, _null, B.BoxDecoration_Qmk, 32, _null, B.EdgeInsets_ZAQ, 32), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, t2, _null, _null, _null, _null, _null, _null)], type$.JSArray_Widget), B.CrossAxisAlignment_2, B.MainAxisAlignment_0, B.MainAxisSize_1, 0), B.Clip_0, _null, B.BoxDecoration_jfW, _null, _null, B.EdgeInsets_12_10_8_8, _null);
     },
     _buildMessages$0() {
       var t1, _this = this;
@@ -246257,14 +246257,14 @@
   };
   A.CloseXIcon_build_closure.prototype = {
     call$1(rect) {
-      return B.LinearGradient_7wL.createShader$1(0, type$.Rect._as(rect));
+      return B.LinearGradient_PGo.createShader$1(0, type$.Rect._as(rect));
     },
     $signature: 800
   };
   A.DialogCloseButton.prototype = {
     build$1(context) {
       var _null = null;
-      return A.Positioned$(-22, A.GestureDetector$(_null, A.Container$(_null, A.Container$(_null, B.Center_tts, B.Clip_0, _null, B.BoxDecoration_iE5, _null, _null, _null, _null), B.Clip_0, _null, B.BoxDecoration_Ggl, 44, _null, B.EdgeInsets_3_3_3_3, 44), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A.DialogCloseButton_build_closure(context), _null, _null, _null, _null, _null, _null), _null, _null, _null, _null, _null, _null);
+      return A.Positioned$(-22, A.GestureDetector$(_null, A.Container$(_null, B.Center_tts, B.Clip_0, _null, B.BoxDecoration_iE5, 44, _null, _null, 44), B.DragStartBehavior_1, false, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, _null, new A.DialogCloseButton_build_closure(context), _null, _null, _null, _null, _null, _null), _null, _null, _null, _null, _null, _null);
     }
   };
   A.DialogCloseButton_build_closure.prototype = {
@@ -291587,22 +291587,22 @@
     B.BorderSide_r2H = new A.BorderSide(B.Color_46m, 3, B.BorderStyle_1, -1);
     B.Border_sw4 = new A.Border(B.BorderSide_r2H, B.BorderSide_Ah5, B.BorderSide_Ah5, B.BorderSide_Ah5);
     B.BoxDecoration_2V4 = new A.BoxDecoration(B.Color_398, null, B.Border_sw4, null, null, null, B.BoxShape_0);
-    B.Color_QKH = new A.Color(1, 0.9098039215686274, 0.7686274509803922, 0.40784313725490196, B.ColorSpace_0);
-    B.Color_qGU = new A.Color(1, 0.6588235294117647, 0.4745098039215686, 0.1803921568627451, B.ColorSpace_0);
-    B.List_GgR = makeConstList([B.Color_QKH, B.Color_qGU], type$.JSArray_Color);
-    B.LinearGradient_7wL = new A.LinearGradient(B.Alignment_0_m1, B.Alignment_0_1, B.TileMode_0, B.List_GgR, null, null);
-    B.BoxShape_1 = new A.BoxShape(1, "circle");
-    B.BoxDecoration_Ggl = new A.BoxDecoration(null, null, null, null, null, B.LinearGradient_7wL, B.BoxShape_1);
     B.Color_WZD = new A.Color(0.13333333333333333, 1, 0.26666666666666666, 0.26666666666666666, B.ColorSpace_0);
     B.Color_tlA = new A.Color(0.3333333333333333, 1, 0.26666666666666666, 0.26666666666666666, B.ColorSpace_0);
     B.Offset_0_0 = new A.Offset(0, 0);
     B.BoxShadow_bAw = new A.BoxShadow(1, B.BlurStyle_0, B.Color_tlA, B.Offset_0_0, 10);
     B.List_NRZ = makeConstList([B.BoxShadow_bAw], type$.JSArray_BoxShadow);
+    B.BoxShape_1 = new A.BoxShape(1, "circle");
     B.BoxDecoration_GuC = new A.BoxDecoration(B.Color_WZD, null, null, null, B.List_NRZ, null, B.BoxShape_1);
     B.Border_jq3 = new A.Border(B.BorderSide_hbo, B.BorderSide_Ah5, B.BorderSide_hbo, B.BorderSide_Ah5);
     B.BoxDecoration_MPH = new A.BoxDecoration(B.Color_398, null, B.Border_jq3, null, null, null, B.BoxShape_0);
     B.Color_iYl = new A.Color(1, 0.08235294117647059, 0.10980392156862745, 0.1803921568627451, B.ColorSpace_0);
     B.BoxDecoration_NgQ = new A.BoxDecoration(B.Color_iYl, null, B.Border_jq3, null, null, null, B.BoxShape_0);
+    B.Color_CBI = new A.Color(1, 0.35294117647058826, 0.47843137254901963, 0.2823529411764706, B.ColorSpace_0);
+    B.Color_jWk = new A.Color(1, 0.1803921568627451, 0.24705882352941178, 0.1411764705882353, B.ColorSpace_0);
+    B.List_feu = makeConstList([B.Color_CBI, B.Color_jWk], type$.JSArray_Color);
+    B.LinearGradient_R4W = new A.LinearGradient(B.Alignment_0_m1, B.Alignment_0_1, B.TileMode_0, B.List_feu, null, null);
+    B.BoxDecoration_Qmk = new A.BoxDecoration(null, null, null, null, null, B.LinearGradient_R4W, B.BoxShape_1);
     B.Color_L7B = new A.Color(1, 0.7333333333333333, 0.5254901960784314, 0.9882352941176471, B.ColorSpace_0);
     B.List_YyS = makeConstList([B.Color_Edl, B.Color_L7B, B.Color_Edl], type$.JSArray_Color);
     B.LinearGradient_mu7 = new A.LinearGradient(B.Alignment_m1_0, B.Alignment_1_0, B.TileMode_0, B.List_YyS, null, null);
@@ -291959,6 +291959,8 @@
     B.Center_W2Y = new A.Center(B.Alignment_0_0, null, null, B.Text_oKy, null);
     B.Text_VYZ = new A.Text("No messages yet \u2014 be the first!", null, B.TextStyle_18j, null, null, null, null, null, null, null);
     B.Center_eUg = new A.Center(B.Alignment_0_0, null, null, B.Text_VYZ, null);
+    B.List_k7Y = makeConstList([B.Color_wst, B.Color_wst], type$.JSArray_Color);
+    B.LinearGradient_PGo = new A.LinearGradient(B.Alignment_m1_0, B.Alignment_1_0, B.TileMode_0, B.List_k7Y, null, null);
     B.CloseXIcon_17_2_null = new A.CloseXIcon(17, 2, null);
     B.Center_iLd = new A.Center(B.Alignment_0_0, null, null, B.CloseXIcon_17_2_null, null);
     B.Color_Edh = new A.Color(1, 1, 0.5411764705882353, 0.5019607843137255, B.ColorSpace_0);
@@ -294474,7 +294476,7 @@
     B.IgnorePointer_Rqn = new A.IgnorePointer(true, B.DecoratedBox_ahe, null);
     B.Positioned_FGc = new A.Positioned(0, 0, 0, 0, null, null, B.IgnorePointer_Rqn, null);
     B.TextStyle_30T = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_lBK, null, null, null);
-    B.Text_mdx = new A.Text("v0.1.100", null, B.TextStyle_30T, null, null, null, null, null, null, null);
+    B.Text_mdx = new A.Text("v0.1.101", null, B.TextStyle_30T, null, null, null, null, null, null, null);
     B.Positioned_Zsn = new A.Positioned(null, 16, 16, null, null, null, B.Text_mdx, null);
     B.Placeholder_null = new A.Placeholder(null);
     B.Positioned_bkT = new A.Positioned(0, 0, 0, 0, null, null, B.Placeholder_null, null);
@@ -295488,7 +295490,7 @@
     B.Text_iBR = new A.Text("ARCHER", null, B.TextStyle_WSE, null, null, null, null, null, null, null);
     B.Text_ie3 = new A.Text("Kick", null, B.TextStyle_ZzL, null, null, null, null, null, null, null);
     B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_jS7 = new A.Text("v0.1.100", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
+    B.Text_jS7 = new A.Text("v0.1.101", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.TextStyle_RUn = new A.TextStyle(true, B.Color_UdU, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.Text_kOS = new A.Text("Cancel", null, B.TextStyle_RUn, null, null, null, null, null, null, null);
     B.Text_lbD = new A.Text("VS", null, B.TextStyle_pg2, null, null, null, null, null, null, null);
