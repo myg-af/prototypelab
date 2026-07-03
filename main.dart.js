@@ -201990,7 +201990,7 @@
             if (element._lifecycleState !== B._ElementLifecycle_3) {
               t8 = t5._debugElementsThatWillNeedToBeRebuiltDueToGlobalKeyShenanigans.$index(0, element);
               t8.toString;
-              J.addAll$1$ax(keys, t8);
+              ;
             }
           }
           if (keys._collection$_length !== 0) {
@@ -236065,7 +236065,7 @@
   };
   A._ClanDetailScreenState__handleKick__closure0.prototype = {
     call$0() {
-      A.Navigator_of(this.$this.get$context(0), false).pop$1$1(true, type$.bool);
+      ;
       return null;
     },
     $signature: 1
@@ -241096,23 +241096,32 @@
                 $async$goto = 1;
                 break;
               }
-              t1 = clan.members;
-              $async$goto = !B.JSArray_methods.any$1(t1, new A._GameScreenState__joinClan_closure($async$self)) ? 3 : 4;
-              break;
+              $async$goto = 3;
+              return A._asyncAwait($async$self._checkPendingJoinRequests$0(), $async$_joinClan$1);
             case 3:
+              // returning from await.
+              if ($async$self._framework$_element == null || $async$self.get$_playerClan() != null) {
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+              t1 = clan.members;
+              $async$goto = !B.JSArray_methods.any$1(t1, new A._GameScreenState__joinClan_closure($async$self)) ? 4 : 5;
+              break;
+            case 4:
               // then
               newMember = new A.ClanMember($async$self._playerName, B.JSNumber_methods.round$0($async$self.get$_totalPowerFloat()), B.ClanRank_7, $async$self._avatarIndex, new A.DateTime(Date.now(), 0, false));
               B.JSArray_methods.add$1(t1, newMember);
               t1 = clan.leaderUid;
-              $async$goto = t1 != null ? 5 : 6;
+              $async$goto = t1 != null ? 6 : 7;
               break;
-            case 5:
-              // then
-              $async$goto = 7;
-              return A._asyncAwait(A.FirestoreService_joinClanLeaderboard(t1, newMember), $async$_joinClan$1);
-            case 7:
-              // returning from await.
             case 6:
+              // then
+              $async$goto = 8;
+              return A._asyncAwait(A.FirestoreService_joinClanLeaderboard(t1, newMember), $async$_joinClan$1);
+            case 8:
+              // returning from await.
+            case 7:
               // join
               $.$get$AuthService_instance();
               t1 = $.Firebase_delegatePackingProperty;
@@ -241122,7 +241131,7 @@
               uid = t1 == null ? null : t1._firebase_auth$_delegate._user.userInfo.uid;
               if (uid != null)
                 A.ChatService_sendClanSystem(clan.name, uid, $async$self._playerName + " joined the clan.");
-            case 4:
+            case 5:
               // join
               $async$self._clearAllPendingRequests$0();
               $async$self.setState$1(new A._GameScreenState__joinClan_closure0($async$self, clan));
@@ -298746,7 +298755,7 @@
     B.PointerSignalKind_4 = new A.PointerSignalKind(4, "unknown");
     B.PopupMenuThemeData_sU5 = new A.PopupMenuThemeData(null, null, null, null, null, null, null, null, null, null, null, null, null);
     B.TextStyle_30T = new A.TextStyle(true, B.Color_wst, null, null, null, null, 13, B.FontWeight_6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_lBK, null, null, null);
-    B.Text_P7P = new A.Text("v0.1.114", null, B.TextStyle_30T, null, null, null, null, null, null, null);
+    B.Text_P7P = new A.Text("v0.1.115", null, B.TextStyle_30T, null, null, null, null, null, null, null);
     B.Positioned_BVE = new A.Positioned(null, 16, 16, null, null, null, B.Text_P7P, null);
     B.DecoratedBox_ahe = new A.DecoratedBox(B.BoxDecoration_wWU, B.DecorationPosition_0, null, null);
     B.IgnorePointer_Rqn = new A.IgnorePointer(true, B.DecoratedBox_ahe, null);
@@ -299790,7 +299799,7 @@
     B.TextStyle_zcT0 = new A.TextStyle(true, B.Color_UdU, null, null, null, null, 13, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, B.List_empty12, null, null, null);
     B.Text_tkA = new A.Text("War Result", null, B.TextStyle_zcT0, null, null, null, null, null, null, null);
     B.TextStyle_lmI = new A.TextStyle(true, B.MaterialAccentColor_2S3, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-    B.Text_uDf = new A.Text("v0.1.114", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
+    B.Text_uDf = new A.Text("v0.1.115", null, B.TextStyle_lmI, null, null, null, null, null, null, null);
     B.TextStyle_3dZ = new A.TextStyle(true, B.Color_pAC, null, null, null, null, 11, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, B.List_empty12, null, null, null);
     B.Text_wFo = new A.Text("Claimed", null, B.TextStyle_3dZ, null, null, null, null, null, null, null);
     B.Text_wuD = new A.Text("War Progress", null, B.TextStyle_0Ch, null, null, null, null, null, null, null);
